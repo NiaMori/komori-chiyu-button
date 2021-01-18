@@ -5,9 +5,12 @@ import { Fragment } from 'react'
 
 import {
   AppBar,
+  Avatar,
   Container,
   Grid,
+  IconButton,
   Toolbar,
+  Tooltip,
   Typography,
   useTheme
 } from '@material-ui/core'
@@ -19,6 +22,8 @@ import { VoicesCard } from './components/voices-card'
 
 import { useVoices } from './hooks/use-voices'
 import { useOptions } from './hooks/use-options'
+import { url } from '../assets/assets.meta'
+import { Github, TelevisionClassic } from 'mdi-material-ui'
 
 const App = () : JSX.Element => {
   console.log('Komori......Komori...... 寂しい......')
@@ -33,9 +38,42 @@ const App = () : JSX.Element => {
     <Fragment>
       <AppBar position = 'sticky'>
         <Toolbar>
-          <Typography>
+          <Avatar
+            src = {url('@images/komori-avatar.png')}
+            css = {css`
+              margin-right: ${theme.spacing(2)}px;
+            `}
+          />
+
+          <Typography
+            css = {css`
+              flex: 1;
+            `}
+          >
             Komori Chiyu Button
           </Typography>
+
+          <Tooltip title = "bilibili">
+            <IconButton
+              color = 'inherit'
+              component = 'a'
+              href = 'https://space.bilibili.com/2299184/'
+              target = '_blank'
+            >
+              <TelevisionClassic />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title = "Github">
+            <IconButton
+              color = 'inherit'
+              component = 'a'
+              href = 'https://github.com/NiaMori/komori-chiyu-button'
+              target = '_blank'
+            >
+              <Github />
+            </IconButton>
+          </Tooltip>
         </Toolbar>
       </AppBar>
 
