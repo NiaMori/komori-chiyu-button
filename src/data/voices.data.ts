@@ -28,6 +28,12 @@ export const origins = {
     date: '2021-01-02',
     url: 'https://www.bilibili.com/video/BV1Eh411274v'
   } as Origin,
+
+  '2021-01-17-P家AmongUs联动': {
+    desc: 'P 家 Among Us 联动',
+    date: '2021-01-17',
+    url: 'https://www.bilibili.com/video/BV1Wh411y7M8'
+  } as Origin
 }
 
 export interface Voice {
@@ -169,4 +175,12 @@ export const voices: Voice[] = [{
   origin: '2020-12-16-古守唄~认真唱了哦',
   interval: ['14:55.478', '15:05.000'],
   tags: ['中二古守']
+}, {
+  desc: '打喷嚏',
+  path: '@voices/2021/01/17/P家AmongUs联动/打喷嚏.mp3',
+  date: '2021-01-18T19:29:22.276+08:00',
+  origin: '2021-01-17-P家AmongUs联动',
+  interval: ['15:27.614', '15:31.456'],
+  tags: ['可爱古守'],
+  gachiRanges: [[51, 100]]
 }]
