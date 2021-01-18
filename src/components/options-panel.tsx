@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from '@emotion/react'
+import { jsx, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import {
@@ -59,7 +59,11 @@ export const OptionsPanel = ({
             </Typography>
           </Grid>
 
-          <Grid item xs>
+          <Grid item xs
+            css = {css`
+              padding-right: ${theme.spacing(2)}px;
+            `}
+          >
             <Slider
               value = {options.gachiValue}
               onChange = {(event, newValue) => modify(it => it.gachiValue = newValue as number)}
