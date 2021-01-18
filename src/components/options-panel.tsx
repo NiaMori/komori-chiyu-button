@@ -55,7 +55,7 @@ export const OptionsPanel = ({
         <Grid container>
           <Grid item>
             <Typography>
-              gachi 值：
+              gachi 浓度：
             </Typography>
           </Grid>
 
