@@ -145,7 +145,8 @@ export const voices: Voice[] = [{
   date: '2021-01-18T12:42:45.404+08:00',
   origin: '2020-12-24-古守平安夜',
   interval: ['1:52:12.847', '1:52:18.367'],
-  tags: ['AA 古守']
+  tags: ['AA 古守'],
+  gachiRanges: [[0, 49]]
 }, {
   desc: 'encore',
   path: '@voices/2020/12/24/古守平安夜/encore.mp3',
@@ -167,7 +168,7 @@ export const voices: Voice[] = [{
   origin: '2020-12-06-高速ringfit',
   interval: ['1:03:43.197', '1:04:51.065'],
   tags: ['涩涩古守'],
-  gachiRanges: [[0, 49]]
+  gachiRanges: [[0, 40]]
 }, {
   desc: '神之雷',
   path: '@voices/2020/12/16/古守唄~认真唱了哦/神之雷.mp3',
