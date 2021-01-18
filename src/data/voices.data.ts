@@ -11,6 +11,12 @@ export const origins = {
     url: 'https://www.bilibili.com/video/BV12t4y1Y7Z4'
   } as Origin,
 
+  '2020-12-16-古守唄~认真唱了哦': {
+    desc: '古守唄~认真唱了哦',
+    date: '2020-12-16',
+    url: 'https://www.bilibili.com/video/BV1SK411u7Bu'
+  } as Origin,
+
   '2020-12-24-古守平安夜': {
     desc: '古守平安夜',
     date: '2020-12-24',
@@ -156,4 +162,11 @@ export const voices: Voice[] = [{
   interval: ['1:03:43.197', '1:04:51.065'],
   tags: ['涩涩古守'],
   gachiRanges: [[0, 49]]
+}, {
+  desc: '神之雷',
+  path: '@voices/2020/12/16/古守唄~认真唱了哦/神之雷.mp3',
+  date: '2021-01-18T18:06:30.995+08:00',
+  origin: '2020-12-16-古守唄~认真唱了哦',
+  interval: ['14:55.478', '15:05.000'],
+  tags: ['中二古守']
 }]
