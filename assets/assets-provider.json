@@ -159,5 +159,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/打喷嚏.mp3"
     ],
     "version": "0.0.1"
+  },
+  "@voices/2021/01/17/突击杂谈/领域展开-古守空港！.mp3": {
+    "OID": "sha256:9fa3c9dabff76e522147cea6983dbf71d6dc93bee285432ad07407635dd5a0f0",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.3/dist/领域展开-古守空港！.mp3"
+    ],
+    "version": "0.0.3"
   }
 }

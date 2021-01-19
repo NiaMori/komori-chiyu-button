@@ -39,7 +39,13 @@ export const origins = {
     desc: 'P 家 Among Us 联动',
     date: '2021-01-17',
     url: 'https://www.bilibili.com/video/BV1Wh411y7M8'
-  } as Origin
+  } as Origin,
+
+  '2021-01-17-突击杂谈': {
+    desc: '突击杂谈',
+    date: '2021-01-17',
+    url: 'https://www.bilibili.com/video/BV1mr4y1T7g6'
+  } as Origin,
 }
 
 export interface Voice {
@@ -204,4 +210,11 @@ export const voices: Voice[] = [{
   origin: '2021-01-14-YTB一万人纪念歌回',
   interval: ['1:00:00.000', '1:00:30.630'],
   tags: ['安可古守']
+}, {
+  desc: '领域展开，「古守空港」！',
+  path: '@voices/2021/01/17/突击杂谈/领域展开-古守空港！.mp3',
+  date: '2021-01-19T20:19:03.337+08:00',
+  origin: '2021-01-17-突击杂谈',
+  interval: ['44:49.077', '44:52.392'],
+  tags: ['AA 古守', '中二古守']
 }]
