@@ -6,3 +6,4 @@ dist-ssr
 deploy-to-server.sh
 workers-site
 wrangler.toml
+.temp

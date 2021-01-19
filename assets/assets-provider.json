@@ -1,0 +1,163 @@
+{
+  "@images/komori-avatar.webp": {
+    "OID": "sha256:017e373d5233314dc6fbd6015972db501ef8d4ea9324bd9f4995c89be4c1e1f6",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/komori-avatar.webp"
+    ],
+    "version": "0.0.1"
+  },
+  "@images/komori-hat.webp": {
+    "OID": "sha256:b3db04cf47523679afd0247eb8ec98c852eac85fb3b02064a9d8c0ff883611aa",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/komori-hat.webp"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/06/高速ringfit/抽筋怪叫一分钟.mp3": {
+    "OID": "sha256:a5fd65a55282925a3bf3085045951b7a35e690d7ba67d3cc4e5b38e3c54673b7",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/抽筋怪叫一分钟.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/16/古守唄~认真唱了哦/神之雷.mp3": {
+    "OID": "sha256:51d6b871e155e7a941fac68d56317c595773cd0dad6a3e0d43542e984156b4b9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/神之雷.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/debu？诶？.mp3": {
+    "OID": "sha256:210ebb75c3afb93d8c617b7641666a41cf1935ac22715f414243bd62f01aaec1",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/debu？诶？.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/encore.mp3": {
+    "OID": "sha256:4604ba2b6634fa7e8b7254bd3639578345260c43e2d6ed96a6b450586aaa3f01",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/encore.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/K-O-M-O-R-I.mp3": {
+    "OID": "sha256:14221c8e6b5b2787bd38217736fd36cf0483fc10991d801fc6cb49fcb297a06d",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/K-O-M-O-R-I.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/Komori-Fan-Club.mp3": {
+    "OID": "sha256:5f00705e22bb23b5dafffc3a038fc855f8b14c9d95710472e82d0fb05e45ade9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/Komori-Fan-Club.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/Komori-为什么一直这么小呢？.mp3": {
+    "OID": "sha256:4fdedc16dd07558416125f82f11bbdfc3d48d81a0f209294529f466631162fa5",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/Komori-为什么一直这么小呢？.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/为什么啊啊——.mp3": {
+    "OID": "sha256:7447685d91240dbdf276f3699fbbacf6edd4a68f3fda9274612a11c667a2a571",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/为什么啊啊——.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/初音未来的消失（？.mp3": {
+    "OID": "sha256:e472e1989d720965b77053956f55bf544097c5cf3aeb387a2c0a34608fb023aa",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/初音未来的消失（？.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/吼吼吼吼~.mp3": {
+    "OID": "sha256:1275a60a67a11f081acfd855adf68afe069b2718a3ca6f653375c95132562245",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/吼吼吼吼~.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/太奇怪了吧！.mp3": {
+    "OID": "sha256:cfa6fa128d705adb807c6cca4005367a9646e05a4ebb6d43b64ed501b6793046",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/太奇怪了吧！.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/好热啊~.mp3": {
+    "OID": "sha256:d797106fdab5395bcc45fc172f6bb7848c0ec5f2ebd2446e339b4cfe34deb709",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/好热啊~.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/帅不帅！.mp3": {
+    "OID": "sha256:0d36b4f878107364b5de86a890cd3cd5e9a2ee2a536a8628705836372844d8a4",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/帅不帅！.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/必杀技！Perfect-Defense！！.mp3": {
+    "OID": "sha256:08e62f9fc485635220a038ea0f0d141b0994a62816e8442d453eef418b4ef9eb",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/必杀技！Perfect-Defense！！.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/恋口上-绝壁版.mp3": {
+    "OID": "sha256:a9f2cb845ab8b925b0269d623a2c5b0655fc957ec3c8e7a3a795334f700fa131",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/恋口上-绝壁版.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/我可爱吗~.mp3": {
+    "OID": "sha256:bfb6132078fc8e3f5ac32503d3d1dd98975d6cff1169611b1901d893037e2f2f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/我可爱吗~.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/雅蠛蝶呦~.mp3": {
+    "OID": "sha256:b8143ca9bb6a9298a722088e1fb16f94de279d390111af0a1b28b7e8d5123b39",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/雅蠛蝶呦~.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2020/12/24/古守平安夜/骗人的吧！.mp3": {
+    "OID": "sha256:c7a067edc04fcab41e962b585393d622dc1cb5eef32e0ed1d5109731e8498b10",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/骗人的吧！.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2021/01/02/新年麻将古守视点/麻将-立直喵~.mp3": {
+    "OID": "sha256:f8bf5964b3b15bc529134f3797c8ebd70bbd8e0f9d24e9ff514a8a8a0e4f3144",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/麻将-立直喵~.mp3"
+    ],
+    "version": "0.0.1"
+  },
+  "@voices/2021/01/14/YTB一万人纪念歌回/ENCORE-无路赛.mp3": {
+    "OID": "sha256:32505e532e3daf2e6712ca6889b9dfbed520c601e033e227ba241035f291e64a",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.2/dist/ENCORE-无路赛.mp3"
+    ],
+    "version": "0.0.2"
+  },
+  "@voices/2021/01/17/P家AmongUs联动/打喷嚏.mp3": {
+    "OID": "sha256:5e27160a62bc61bb8c2e98822ee98db6e2b96fb034d6d7146df5cbeace5051d4",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/打喷嚏.mp3"
+    ],
+    "version": "0.0.1"
+  }
+}
