@@ -39,7 +39,7 @@ const App = () : JSX.Element => {
       <AppBar position = 'sticky'>
         <Toolbar>
           <Avatar
-            src = {url('@images/komori-avatar.png')}
+            src = {url('@images/komori-avatar.webp')}
             css = {css`
               margin-right: ${theme.spacing(2)}px;
             `}

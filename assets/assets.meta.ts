@@ -1,4 +1,4 @@
-const modules = import.meta.globEager('./**/*.{wav,mp3,svg,jpg,png}')
+const modules = import.meta.globEager('./**/*.{wav,mp3,svg,jpg,png,webp}')
 
 export const assets: {
   [path: string] : {
