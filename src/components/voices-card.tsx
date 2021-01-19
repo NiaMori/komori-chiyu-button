@@ -65,10 +65,6 @@ export const VoicesCard = ({
             <VoiceButton
               key = {voice.path}
               voice = {voice}
-              css = {css`
-                margin-right: ${theme.spacing(1)}px;
-                margin-bottom: ${theme.spacing(2)}px;
-              `}
             />
           ))}
         </Box>

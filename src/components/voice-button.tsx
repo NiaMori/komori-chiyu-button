@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx } from '@emotion/react'
+import { css, jsx } from '@emotion/react'
 
-import { Button } from '@material-ui/core'
+import { Badge, Button, useTheme } from '@material-ui/core'
 
 import { useVoicePlayback } from '../hooks/use-voice-playback'
 
@@ -12,22 +12,40 @@ export interface VoiceButtonProps {
   voice: Voice
 }
 
+const isNewVoice = ({ date }: Voice) => {
+  return (Date.now() - Date.parse(date)) < 86400000
+}
+
 export const VoiceButton = ({
   voice,
   className
 }: VoiceButtonProps) : JSX.Element => {
+  const theme = useTheme()
+
   const { desc } = voice
 
   const { play } = useVoicePlayback(voice)
 
+  const isNew = isNewVoice(voice)
+
   return (
-    <Button
-      onClick = {() => {play()}}
-      variant = 'contained'
-      color = 'secondary'
+    <Badge
+      color = 'primary'
+      badgeContent = 'new'
+      invisible = {!isNew}
       className = {className}
+      css = {css`
+        margin-right: ${isNew ? theme.spacing(3) : theme.spacing(1)}px;
+        margin-bottom: ${theme.spacing(2)}px;
+      `}
     >
-      <span>{desc}</span>
-    </Button>
+      <Button
+        onClick = {() => {play()}}
+        variant = 'contained'
+        color = 'secondary'
+      >
+        <span>{desc}</span>
+      </Button>
+    </Badge>
   )
 }
