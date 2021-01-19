@@ -29,6 +29,12 @@ export const origins = {
     url: 'https://www.bilibili.com/video/BV1Eh411274v'
   } as Origin,
 
+  '2021-01-14-YTB一万人纪念歌回': {
+    desc: 'YTB 一万人纪念歌回',
+    date: '2021-01-14',
+    url: 'https://www.bilibili.com/video/BV1St4y1z7Ry'
+  } as Origin,
+
   '2021-01-17-P家AmongUs联动': {
     desc: 'P 家 Among Us 联动',
     date: '2021-01-17',
@@ -191,4 +197,11 @@ export const voices: Voice[] = [{
   origin: '2020-12-24-古守平安夜',
   interval: ['1:53:29.217', '1:53:31.896'],
   tags: ['生气古守']
+}, {
+  desc: 'ENCORE - 无路赛',
+  path: '@voices/2021/01/14/YTB一万人纪念歌回/ENCORE-无路赛.mp3',
+  date: '2021-01-19T16:33:59.248+08:00',
+  origin: '2021-01-14-YTB一万人纪念歌回',
+  interval: ['1:00:00.000', '1:00:30.630'],
+  tags: ['安可古守']
 }]
