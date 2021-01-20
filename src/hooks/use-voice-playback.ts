@@ -6,6 +6,8 @@ import { useVocalist } from './use-vocalist'
 
 import { Voice } from '../data/voices.data'
 
+import { reportVoicePlayback } from '../analytics'
+
 export const useVoicePlayback = (voice: Voice) : { play: () => void } => {
   const [, { switchTo, triggerOnPlay, triggerOnEnd, triggerOnLoaded }] = useVocalist()
 
@@ -14,7 +16,7 @@ export const useVoicePlayback = (voice: Voice) : { play: () => void } => {
     sound
   } ] =  useSound(url(voice.path), {
     preload: false,
-    onplay: triggerOnPlay,
+    onplay: () => { reportVoicePlayback(voice), triggerOnPlay() },
     onend: triggerOnEnd,
     onload: triggerOnLoaded
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
