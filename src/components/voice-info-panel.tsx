@@ -16,10 +16,39 @@ import {
 
 import { useVocalist } from '../hooks/use-vocalist'
 
-import { voices as allVoices, origins } from '../data/voices.data'
+import { isFromLive, isFromWebPage, Origin, voices as allVoices } from '../data/voices.data'
+import { lives } from '../data/lives.data'
 
 export interface VoiceInfoPanelProps {
   className?: string
+}
+
+const getOriginInfo = (origin: Origin) : { url: string, desc: string } => {
+  if (isFromWebPage(origin)) {
+    return origin
+  } else if (isFromLive(origin)) {
+    const live = lives[origin.live]
+
+    return {
+      url: live.url,
+      desc: `${live.date} 「${live.desc}」`
+    }
+  } else {
+    return {
+      url: '',
+      desc: '未知来源'
+    }
+  }
+}
+
+const OriginLink = ({ origin }: { origin: Origin }) => {
+  const { url, desc } = getOriginInfo(origin)
+
+  return (
+    <Button component = 'a' href = {url} color = 'primary'>
+      {desc}
+    </Button>
+  )
 }
 
 export const VoiceInfoPanel = ({
@@ -35,11 +64,9 @@ export const VoiceInfoPanel = ({
 
   const {
     desc,
-    origin: originName,
+    origin,
     tags
   } = voice
-
-  const origin = originName ? origins[originName] : null
 
   const styles = {
     flexVCenter: css`
@@ -68,13 +95,7 @@ export const VoiceInfoPanel = ({
           </Grid>
 
           <Grid item xs>
-            {origin ? (
-              <Button component = 'a' href = {origin.url} color = 'primary'>
-                {`${origin.date} 「${origin.desc}」`}
-              </Button>
-            ) : (
-              <Box>未知</Box>
-            )}
+            <OriginLink origin = {origin}></OriginLink>
           </Grid>
         </Grid>
 
