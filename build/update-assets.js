@@ -70,6 +70,8 @@ Assets for website [komori-chiyu-button](https://github.com/NiaMori/komori-chiyu
   return [version, info]
 }
 
+const ignore = new Set(['@images/komori-hat.svg'])
+
 const main = async () => {
   const data = JSON.parse(fs.readFileSync('./assets/assets-provider.json').toLocaleString())
 
@@ -81,6 +83,10 @@ const main = async () => {
     }
 
     const path = file.replace(/^assets\//, '@')
+
+    if (ignore.has(path)) {
+      continue
+    }
 
     const oid = await getOID(file)
 
@@ -94,6 +100,11 @@ const main = async () => {
         file, path, oid
       })
     }
+  }
+
+  if (!newAssets.length) {
+    console.log('already up to date')
+    return
   }
 
   for (const { path, oid } of newAssets) {

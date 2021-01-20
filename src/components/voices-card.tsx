@@ -43,13 +43,13 @@ export const VoicesCard = ({
       `}
     >
       <img
-        src = {url('@images/komori-hat.webp')}
+        src = {url('@images/komori-hat.svg')}
         css = {css`
-          width: 4.2em;
+          width: 5.5em;
           position: absolute;
           top: 0;
           left: 0;
-          transform: translate(-57%, -27%);
+          transform: translate(-57%, -27%) rotate(-20deg);
         `}
       />
 
