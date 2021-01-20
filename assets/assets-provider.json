@@ -166,5 +166,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.3/dist/领域展开-古守空港！.mp3"
     ],
     "version": "0.0.3"
+  },
+  "@voices/2019/05/26/YTB收益化纪念-生放送歌回-2nd-live/恋口上之歌.mp3": {
+    "OID": "sha256:57d9363682f42442e07adbfe37d4e620511bed6a3b0923ca807f2c625eac29e4",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.4/dist/恋口上之歌.mp3"
+    ],
+    "version": "0.0.4"
   }
 }

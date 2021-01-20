@@ -5,6 +5,12 @@ export interface Origin {
 }
 
 export const origins = {
+  '2019-05-26-YTB收益化纪念-生放送歌回-2nd-live': {
+    desc: '【YTB 收益化纪念】古守血遊 生放送歌回 2nd live',
+    date: '2019-05-26',
+    url: 'https://www.youtube.com/watch?v=knHhUNX_zSs'
+  } as Origin,
+
   '2020-12-06-高速ringfit': {
     desc: '高速ringfit',
     date: '2020-12-06',
@@ -217,4 +223,11 @@ export const voices: Voice[] = [{
   origin: '2021-01-17-突击杂谈',
   interval: ['44:49.077', '44:52.392'],
   tags: ['AA 古守', '中二古守']
+}, {
+  desc: '恋口上之歌',
+  path: '@voices/2019/05/26/YTB收益化纪念-生放送歌回-2nd-live/恋口上之歌.mp3',
+  date: '2021-01-20T18:33:14.819+08:00',
+  origin: '2019-05-26-YTB收益化纪念-生放送歌回-2nd-live',
+  interval: ['34:44.693', '35:36.516'],
+  tags: ['搞怪古守']
 }]
