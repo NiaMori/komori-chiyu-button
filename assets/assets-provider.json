@@ -173,5 +173,47 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.4/dist/恋口上之歌.mp3"
     ],
     "version": "0.0.4"
+  },
+  "@voices/fanbox/ツンデレヤンデレボイス集/ツンデレお手伝い編.mp3": {
+    "OID": "sha256:ae085c6ed4e380e04ef0ef27102793a2fd3f002bdbeae598a513a7c432ca0a38",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.5/dist/ツンデレお手伝い編.mp3"
+    ],
+    "version": "0.0.5"
+  },
+  "@voices/fanbox/ツンデレヤンデレボイス集/ツンデレお見舞い編.mp3": {
+    "OID": "sha256:345fff0f4552cb4e57bd4d4d5dd52d694406963c67501f39cd35cf94b5fbed4f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.5/dist/ツンデレお見舞い編.mp3"
+    ],
+    "version": "0.0.5"
+  },
+  "@voices/fanbox/ツンデレヤンデレボイス集/ツンデレ幼馴染編.mp3": {
+    "OID": "sha256:fa8ca20f78a7ca7f58ac2211d2e3f362d18683b52f668605152b750fb1aa1fa7",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.5/dist/ツンデレ幼馴染編.mp3"
+    ],
+    "version": "0.0.5"
+  },
+  "@voices/fanbox/ツンデレヤンデレボイス集/ヤンデレ兄弟編.mp3": {
+    "OID": "sha256:68c0239f63ffd993df4f73f5d194e85c7d1d5820fe9e02f9342118cca6d4dd41",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.5/dist/ヤンデレ兄弟編.mp3"
+    ],
+    "version": "0.0.5"
+  },
+  "@voices/fanbox/ツンデレヤンデレボイス集/ヤンデレ彼女編.mp3": {
+    "OID": "sha256:e3fe4e52b9296266cea8e967acc0ab8083a003fade6c81fa7f93fdeef4807a34",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.5/dist/ヤンデレ彼女編.mp3"
+    ],
+    "version": "0.0.5"
+  },
+  "@voices/fanbox/ツンデレヤンデレボイス集/ヤンデレ隣のお姉さん編.mp3": {
+    "OID": "sha256:19bea46961f513a5277303ebe9270cd52d8ad889c03c801edf268eb0102bd637",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.5/dist/ヤンデレ隣のお姉さん編.mp3"
+    ],
+    "version": "0.0.5"
   }
 }

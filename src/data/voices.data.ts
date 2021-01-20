@@ -243,4 +243,58 @@ export const voices: Voice[] = [{
     interval: ['34:44.693', '35:36.516']
   },
   tags: ['搞怪古守']
+}, {
+  desc: '古守：傲娇探病篇',
+  path: '@voices/fanbox/ツンデレヤンデレボイス集/ツンデレお見舞い編.mp3',
+  date: '2021-01-20T22:23:56.515+08:00',
+  origin: {
+    url: 'https://tqo7iwsc.fanbox.cc/posts/829732',
+    desc: 'Fanbox 古守病娇傲娇音声合集'
+  },
+  tags: ['古守音声', '傲娇古守']
+}, {
+  desc: '古守：傲娇帮助篇',
+  path: '@voices/fanbox/ツンデレヤンデレボイス集/ツンデレお手伝い編.mp3',
+  date: '2021-01-20T22:23:56.514+08:00',
+  origin: {
+    url: 'https://tqo7iwsc.fanbox.cc/posts/829732',
+    desc: 'Fanbox 古守病娇傲娇音声合集'
+  },
+  tags: ['古守音声', '傲娇古守']
+}, {
+  desc: '古守：傲娇青梅',
+  path: '@voices/fanbox/ツンデレヤンデレボイス集/ツンデレ幼馴染編.mp3',
+  date: '2021-01-20T22:23:56.513+08:00',
+  origin: {
+    url: 'https://tqo7iwsc.fanbox.cc/posts/829732',
+    desc: 'Fanbox 古守病娇傲娇音声合集'
+  },
+  tags: ['古守音声', '傲娇古守']
+}, {
+  desc: '古守：病娇妹妹',
+  path: '@voices/fanbox/ツンデレヤンデレボイス集/ヤンデレ兄弟編.mp3',
+  date: '2021-01-20T22:23:56.512+08:00',
+  origin: {
+    url: 'https://tqo7iwsc.fanbox.cc/posts/829732',
+    desc: 'Fanbox 古守病娇傲娇音声合集'
+  },
+  tags: ['古守音声', '病娇古守']
+}, {
+  desc: '古守：病娇邻家姐姐',
+  path: '@voices/fanbox/ツンデレヤンデレボイス集/ヤンデレ隣のお姉さん編.mp3',
+  date: '2021-01-20T22:23:56.511+08:00',
+  origin: {
+    url: 'https://tqo7iwsc.fanbox.cc/posts/829732',
+    desc: 'Fanbox 古守病娇傲娇音声合集'
+  },
+  tags: ['古守音声', '病娇古守']
+}, {
+  desc: '古守：病娇女友',
+  path: '@voices/fanbox/ツンデレヤンデレボイス集/ヤンデレ彼女編.mp3',
+  date: '2021-01-20T22:23:56.510+08:00',
+  origin: {
+    url: 'https://tqo7iwsc.fanbox.cc/posts/829732',
+    desc: 'Fanbox 古守病娇傲娇音声合集'
+  },
+  tags: ['古守音声', '病娇古守']
 }]
