@@ -15,7 +15,7 @@ export const generateMetaInfo = (): Plugin => {
         }
 
         if (/komori-hat\.\S+\.svg$/.test(fileName)) {
-          pushing.push(`</${fileName}>; rel=preload; as=image; crossorigin=anonymous`)
+          pushing.push(`</${fileName}>; rel=preload; as=image;`)
         }
       }
 
