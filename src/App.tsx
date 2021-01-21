@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/react'
 
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 
 import {
   AppBar,
@@ -25,7 +25,25 @@ import { useOptions } from './hooks/use-options'
 import { url } from '../assets/assets.meta'
 import { Github, TelevisionClassic } from 'mdi-material-ui'
 
+const komoriAA = `
+言いたいことがあるんだよ！
+やっぱり古守はかわいいよ！
+すきすき大好き！やっぱ好き！
+やっと見つけた吸血鬼！
+お肉が生まれてきた理由
+それは古守に出会うため！
+お肉と一緒に人生歩もう！
+世界で一番ひきこもり！
+ひ・き・こ・も・り！！
+`
+
 const App = () : JSX.Element => {
+  useEffect(() => {
+    for (const it of komoriAA.trim().split(/\n/)) {
+      console.log(it)
+    }
+  }, [])
+
   console.log('Komori......Komori...... 寂しい......')
 
   const theme = useTheme()
