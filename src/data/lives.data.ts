@@ -52,6 +52,12 @@ export const lives = {
     date: '2021-01-17',
     url: 'https://www.bilibili.com/video/BV1mr4y1T7g6'
   } as Live,
+
+  '2021-01-21-TFT新赛季': {
+    desc: 'TFT 新赛季',
+    date: '2021-01-21',
+    url: ''
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives

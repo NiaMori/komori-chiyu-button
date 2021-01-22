@@ -215,5 +215,33 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.6/dist/ヤンデレ隣のお姉さん編.mp3"
     ],
     "version": "0.0.6"
+  },
+  "@voices/2021/01/21/TFT新赛季/给肉肉的生日快乐歌~.mp3": {
+    "OID": "sha256:548ae31d417ccd7659f30965ff378dabb630de73c0d9c2016f40fd153ff17b83",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.7/dist/给肉肉的生日快乐歌~.mp3"
+    ],
+    "version": "0.0.7"
+  },
+  "@voices/2021/01/21/TFT新赛季/魔镜啊，谁是世界上最可爱的女孩？.mp3": {
+    "OID": "sha256:252bc022d754c0398d3b34868d8277ba0536cbb2d83246dced8af618d6aa91bf",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.7/dist/魔镜啊，谁是世界上最可爱的女孩？.mp3"
+    ],
+    "version": "0.0.7"
+  },
+  "@voices/2021/01/21/TFT新赛季/哼歌-二人三脚.mp3": {
+    "OID": "sha256:79da98df41b92a5a92ef0d3e40aab5be57af773d26b35ddbfbdf34d04da287e6",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.8/dist/哼歌-二人三脚.mp3"
+    ],
+    "version": "0.0.8"
+  },
+  "@voices/2021/01/21/TFT新赛季/oto酱...啊...搞不清了...已经什么也不知道了.mp3": {
+    "OID": "sha256:000b258664a9e968c2171590c2f8b6cc7cfcfc63d2d3ec118a698bf55d8a098c",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.9/dist/oto酱...啊...搞不清了...已经什么也不知道了.mp3"
+    ],
+    "version": "0.0.9"
   }
 }
