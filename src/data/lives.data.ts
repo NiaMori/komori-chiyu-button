@@ -56,7 +56,7 @@ export const lives = {
   '2021-01-21-TFT新赛季': {
     desc: 'TFT 新赛季',
     date: '2021-01-21',
-    url: ''
+    url: 'https://www.bilibili.com/video/BV1TX4y1T7Es'
   } as Live,
 }
 
