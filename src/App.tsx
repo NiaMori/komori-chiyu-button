@@ -25,6 +25,8 @@ import { useOptions } from './hooks/use-options'
 import { url } from '../assets/assets.meta'
 import { Github, TelevisionClassic } from 'mdi-material-ui'
 
+import { voices as allVoices, isNewVoice } from './data/voices.data'
+
 const komoriAA = `
 言いたいことがあるんだよ！
 やっぱり古守はかわいいよ！
@@ -51,6 +53,8 @@ const App = () : JSX.Element => {
   const [options] = useOptions()
 
   const { voices } = useVoices(options)
+
+  const newVoices = allVoices.filter(isNewVoice)
 
   return (
     <Fragment>
@@ -117,6 +121,11 @@ const App = () : JSX.Element => {
             />
           </Grid>
         </Grid>
+
+        {
+          newVoices.length
+          && <VoicesCard tag = {'最近更新'} voices = {newVoices}></VoicesCard>
+        }
 
         <Cards columnGap = {theme.spacing(5)}>
           {voices.map(([tag, voices]) => (
