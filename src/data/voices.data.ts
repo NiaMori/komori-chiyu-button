@@ -31,6 +31,10 @@ export interface Voice {
   gachiRanges?: [number, number][]
 }
 
+export const isNewVoice = ({ date }: Voice) : boolean => {
+  return (Date.now() - Date.parse(date)) < 86400000
+}
+
 export const sexyTags = ['涩涩古守']
 
 export const voices: Voice[] = [{
@@ -334,3 +338,4 @@ export const voices: Voice[] = [{
   },
   tags: ['涩涩古守', '古守 x 音']
 }]
+

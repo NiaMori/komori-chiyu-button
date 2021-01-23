@@ -5,15 +5,11 @@ import { Badge, Button, useTheme } from '@material-ui/core'
 
 import { useVoicePlayback } from '../hooks/use-voice-playback'
 
-import { Voice } from '../data/voices.data'
+import { Voice, isNewVoice } from '../data/voices.data'
 
 export interface VoiceButtonProps {
   className?: string,
   voice: Voice
-}
-
-const isNewVoice = ({ date }: Voice) => {
-  return (Date.now() - Date.parse(date)) < 86400000
 }
 
 export const VoiceButton = ({
