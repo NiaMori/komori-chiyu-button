@@ -243,5 +243,33 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.9/dist/oto酱...啊...搞不清了...已经什么也不知道了.mp3"
     ],
     "version": "0.0.9"
+  },
+  "@voices/2021/01/22/Apex联动古守视角/nano-结婚.mp3": {
+    "OID": "sha256:c66c69df6fa1a675b8016e74b10562162028766aa2797bbfa0a38b62c02c336d",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.10/dist/nano-结婚.mp3"
+    ],
+    "version": "0.0.10"
+  },
+  "@voices/2021/01/22/Apex联动古守视角/伸懒腰.mp3": {
+    "OID": "sha256:f3fb7dca515a7efa879a338792db71466af1a7b209c861d3b0e1916ab0ae26bf",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.10/dist/伸懒腰.mp3"
+    ],
+    "version": "0.0.10"
+  },
+  "@voices/2021/01/22/Apex联动古守视角/古守娇呼.mp3": {
+    "OID": "sha256:f2f3fe0e0cf933136c65e175b4eae6671efe7fc575879f028010ccb2f3e9d614",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.10/dist/古守娇呼.mp3"
+    ],
+    "version": "0.0.10"
+  },
+  "@voices/2021/01/22/Apex联动古守视角/哇哦~.mp3": {
+    "OID": "sha256:1c4763ff7abe6b615381e9432d39eeb24c340bdba8f25e459c02a42c232139b5",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.10/dist/哇哦~.mp3"
+    ],
+    "version": "0.0.10"
   }
 }

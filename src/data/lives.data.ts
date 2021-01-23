@@ -58,6 +58,12 @@ export const lives = {
     date: '2021-01-21',
     url: 'https://www.bilibili.com/video/BV1TX4y1T7Es'
   } as Live,
+
+  '2021-01-22-Apex联动古守视角': {
+    desc: 'Apex 联动古守视角',
+    date: '2021-01-22',
+    url: 'https://www.bilibili.com/video/BV1Wo4y1R78C'
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives
