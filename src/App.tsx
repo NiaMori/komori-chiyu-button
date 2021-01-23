@@ -105,7 +105,7 @@ const App = () : JSX.Element => {
         `}
       >
         <Grid container spacing = {3} alignItems = 'stretch'>
-          <Grid item xs>
+          <Grid item md = {6} xs = {12}>
             <VoiceInfoPanel
               css = {css`
                 height: 100%;
@@ -113,7 +113,7 @@ const App = () : JSX.Element => {
             />
           </Grid>
 
-          <Grid item xs>
+          <Grid item md = {6} xs = {12}>
             <OptionsPanel
               css = {css`
                 height: 100%;
