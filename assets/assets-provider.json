@@ -1,10 +1,10 @@
 {
   "@images/komori-avatar.webp": {
-    "OID": "sha256:017e373d5233314dc6fbd6015972db501ef8d4ea9324bd9f4995c89be4c1e1f6",
+    "OID": "sha256:9c609e9a3422561ca7f0ad4f5a961cc81c9939e47dcd773a62400c7155aec4cd",
     "provider": [
-      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.1/dist/komori-avatar.webp"
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.11/dist/komori-avatar.webp"
     ],
-    "version": "0.0.1"
+    "version": "0.0.11"
   },
   "@images/komori-hat.webp": {
     "OID": "sha256:b3db04cf47523679afd0247eb8ec98c852eac85fb3b02064a9d8c0ff883611aa",
