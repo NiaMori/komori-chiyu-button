@@ -65,6 +65,7 @@ export const VoicesCard = ({
             <VoiceButton
               key = {voice.path}
               voice = {voice}
+              tag = {tag}
             />
           ))}
         </Box>

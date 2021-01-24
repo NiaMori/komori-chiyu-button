@@ -10,6 +10,7 @@ export interface Sound {
   play: () => void,
   stop: () => void,
   voice: Voice,
+  tag: string,
   howl: Howl
 }
 

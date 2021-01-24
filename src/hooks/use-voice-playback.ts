@@ -8,7 +8,7 @@ import { Voice } from '../data/voices.data'
 
 import { reportVoicePlayback } from '../analytics'
 
-export const useVoicePlayback = (voice: Voice) : { play: () => void } => {
+export const useVoicePlayback = ({ voice, tag }: { voice: Voice, tag: string }) : { play: () => void } => {
   const [, { switchTo, triggerOnPlay, triggerOnEnd, triggerOnLoaded }] = useVocalist()
 
   const [playSound, {
@@ -26,6 +26,7 @@ export const useVoicePlayback = (voice: Voice) : { play: () => void } => {
     if (sound) {
       switchTo({
         voice,
+        tag,
         howl: sound,
         load: () => {
           if (sound.state() == 'unloaded') {
@@ -36,7 +37,7 @@ export const useVoicePlayback = (voice: Voice) : { play: () => void } => {
         stop: stopSound
       })
     }
-  }, [playSound, stopSound, sound, voice, switchTo])
+  }, [playSound, stopSound, sound, voice, tag, switchTo])
 
   return {
     play

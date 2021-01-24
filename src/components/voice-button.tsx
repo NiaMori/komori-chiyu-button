@@ -1,28 +1,44 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react'
 
-import { Badge, Button, useTheme } from '@material-ui/core'
+import { Backdrop, Badge, Box, Button, useTheme } from '@material-ui/core'
 
 import { useVoicePlayback } from '../hooks/use-voice-playback'
 
 import { Voice, isNewVoice } from '../data/voices.data'
+import { useVocalist } from '../hooks/use-vocalist'
+import { useDebounced } from '../hooks/use-debounced'
 
 export interface VoiceButtonProps {
   className?: string,
-  voice: Voice
+  voice: Voice,
+  tag: string
 }
 
 export const VoiceButton = ({
   voice,
+  tag,
   className
 }: VoiceButtonProps) : JSX.Element => {
   const theme = useTheme()
 
-  const { desc } = voice
+  const { desc, path } = voice
 
-  const { play } = useVoicePlayback(voice)
+  const { play } = useVoicePlayback({
+    voice,
+    tag
+  })
 
   const isNew = isNewVoice(voice)
+
+  const [{ state, currentSound }] = useVocalist()
+
+  const isLoadingRaw = state === 'loading'
+    && !!currentSound
+    && currentSound.voice.path == path
+    && currentSound.tag == tag
+
+  const isLoading = useDebounced(isLoadingRaw, 150)
 
   return (
     <Badge
@@ -35,16 +51,38 @@ export const VoiceButton = ({
         margin-bottom: ${theme.spacing(2)}px;
       `}
     >
-      <Button
-        onClick = {() => {play()}}
-        variant = 'contained'
-        color = 'secondary'
-        css = {css`
-          color: #FFFCEF;
-        `}
-      >
-        <span>{desc}</span>
-      </Button>
+      <Box>
+        <Button
+          onClick = {() => {play()}}
+          variant = 'contained'
+          color = 'secondary'
+        >
+          <span
+            css = {css`
+              color: #FFFCEF;
+              opacity: ${isLoading ? 0 : 1};
+            `}
+          >
+            {desc}
+          </span>
+        </Button>
+
+        <Backdrop
+          open = {isLoading}
+          css = {css`
+            position: absolute;
+            z-index: 4;
+          `}
+        >
+          <span
+            css = {css`
+              color: #FFFCEF;
+            `}
+          >
+            Lording...
+          </span>
+        </Backdrop>
+      </Box>
     </Badge>
   )
 }
