@@ -39,6 +39,9 @@ export const VoiceButton = ({
         onClick = {() => {play()}}
         variant = 'contained'
         color = 'secondary'
+        css = {css`
+          color: #FFFCEF;
+        `}
       >
         <span>{desc}</span>
       </Button>

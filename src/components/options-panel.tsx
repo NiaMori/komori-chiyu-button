@@ -67,6 +67,7 @@ export const OptionsPanel = ({
             <Slider
               value = {options.gachiValue}
               onChange = {(event, newValue) => modify(it => it.gachiValue = newValue as number)}
+              color = 'secondary'
               valueLabelDisplay = "auto"
               valueLabelFormat = {(value) => `${value}%`}
               marks = {marks}

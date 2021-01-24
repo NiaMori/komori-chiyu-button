@@ -45,7 +45,7 @@ const OriginLink = ({ origin }: { origin: Origin }) => {
   const { url, desc } = getOriginInfo(origin)
 
   return (
-    <Button component = 'a' href = {url} color = 'primary'>
+    <Button component = 'a' href = {url} color = 'secondary'>
       {desc}
     </Button>
   )
