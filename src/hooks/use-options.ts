@@ -15,7 +15,7 @@ export interface OptionsMethods {
 export type OptionsHook = [Options, OptionsMethods]
 
 export const [useOptionsState, OptionsProvider] = createStateContext<Options>({
-  gachiValue: 50,
+  gachiValue: 100,
   showAllVoices: false,
   showSexyKomori: false
 })
