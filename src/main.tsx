@@ -6,9 +6,16 @@ import ReactDOM from 'react-dom'
 
 import App from './App'
 
-import { createMuiTheme, CssBaseline, ThemeProvider } from '@material-ui/core'
-import { VocalistProvider } from './hooks/use-vocalist'
-import { OptionsProvider } from './hooks/use-options'
+import {
+  CssBaseline,
+  createMuiTheme,
+  ThemeProvider
+} from '@material-ui/core'
+
+import {
+  VocalistProvider,
+  OptionsProvider
+} from './hooks'
 
 const theme = createMuiTheme({
   palette: {

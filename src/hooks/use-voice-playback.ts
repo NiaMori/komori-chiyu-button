@@ -1,10 +1,11 @@
 import { url } from '../../assets/assets.meta'
+
 import { useCallback } from 'react'
 
 import useSound from 'use-sound'
 import { useVocalist } from './use-vocalist'
 
-import { Voice } from '../data/voices.data'
+import { Voice } from '../data'
 
 import { reportVoicePlayback } from '../analytics'
 

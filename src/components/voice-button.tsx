@@ -1,13 +1,24 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react'
 
-import { Backdrop, Badge, Box, Button, useTheme } from '@material-ui/core'
+import {
+  Backdrop,
+  Badge,
+  Box,
+  Button,
+  useTheme
+} from '@material-ui/core'
 
-import { useVoicePlayback } from '../hooks/use-voice-playback'
+import {
+  useVoicePlayback,
+  useVocalist,
+  useDebounced
+} from '../hooks'
 
-import { Voice, isNewVoice } from '../data/voices.data'
-import { useVocalist } from '../hooks/use-vocalist'
-import { useDebounced } from '../hooks/use-debounced'
+import {
+  Voice,
+  isNewVoice
+} from '../data'
 
 export interface VoiceButtonProps {
   className?: string,

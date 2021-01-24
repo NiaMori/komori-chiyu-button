@@ -10,14 +10,18 @@ import {
   Grid,
   Button,
   Chip,
-  Box,
   useTheme
 } from '@material-ui/core'
 
-import { useVocalist } from '../hooks/use-vocalist'
+import { useVocalist } from '../hooks'
 
-import { isFromLive, isFromWebPage, Origin, voices as allVoices } from '../data/voices.data'
-import { lives } from '../data/lives.data'
+import {
+  lives,
+  voices as allVoices,
+  Origin,
+  isFromLive,
+  isFromWebPage
+} from '../data'
 
 export interface VoiceInfoPanelProps {
   className?: string

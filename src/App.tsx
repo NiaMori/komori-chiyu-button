@@ -3,6 +3,8 @@ import { jsx, css } from '@emotion/react'
 
 import { Fragment, useEffect } from 'react'
 
+import { url } from '../assets/assets.meta'
+
 import {
   AppBar,
   Avatar,
@@ -15,17 +17,27 @@ import {
   useTheme
 } from '@material-ui/core'
 
-import { VoiceInfoPanel } from './components/voice-info-panel'
-import { OptionsPanel } from './components/options-panel'
-import { Cards } from './components/cards'
-import { VoicesCard } from './components/voices-card'
+import {
+  Github,
+  TelevisionClassic
+} from 'mdi-material-ui'
 
-import { useVoices } from './hooks/use-voices'
-import { useOptions } from './hooks/use-options'
-import { url } from '../assets/assets.meta'
-import { Github, TelevisionClassic } from 'mdi-material-ui'
+import {
+  VoiceInfoPanel,
+  OptionsPanel,
+  Cards,
+  VoicesCard
+} from './components'
 
-import { voices as allVoices, isNewVoice } from './data/voices.data'
+import {
+  useVoices,
+  useOptions
+} from './hooks'
+
+import {
+  voices as allVoices,
+  isNewVoice
+} from './data'
 
 const komoriAA = `
 言いたいことがあるんだよ！

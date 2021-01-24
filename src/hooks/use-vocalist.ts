@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { createStateContext } from 'react-use'
 import produce from 'immer'
 
-import { Voice } from '../data/voices.data'
+import { Voice } from '../data'
 import { Howl } from 'howler'
 
 export interface Sound {

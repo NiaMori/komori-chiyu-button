@@ -15,7 +15,7 @@ import {
   useTheme
 } from '@material-ui/core'
 
-import { useOptions } from '../hooks/use-options'
+import { useOptions } from '../hooks'
 
 export interface OptionsPanelProps {
   className?: string

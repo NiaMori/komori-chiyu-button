@@ -2,7 +2,11 @@ import { useCallback, useMemo } from 'react'
 
 import { Options } from './use-options'
 
-import { sexyTags, Voice, voices as allVoices } from '../data/voices.data'
+import {
+  sexyTags,
+  Voice,
+  voices as allVoices
+} from '../data'
 
 export type UseVoicesProps = Options
 

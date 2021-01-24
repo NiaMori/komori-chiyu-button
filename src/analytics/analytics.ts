@@ -1,4 +1,4 @@
-import { Voice } from '../data/voices.data'
+import { Voice } from '../data'
 
 /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 export const gtag = (...args: any[]): void => {

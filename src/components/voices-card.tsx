@@ -15,7 +15,7 @@ import {
 
 import { VoiceButton } from './voice-button'
 
-import { Voice } from '../data/voices.data'
+import { Voice } from '../data'
 
 export interface VoicesCardProps {
   tag: string,
