@@ -3,25 +3,31 @@ import { jsx, css } from '@emotion/react'
 
 import { Fragment, useEffect } from 'react'
 
+import { Switch as RouterView, Route, Link } from 'react-router-dom'
+
 import { url } from '../assets/assets.meta'
 
 import {
   AppBar,
   Avatar,
+  Button,
   Container,
   IconButton,
   Toolbar,
   Tooltip,
-  Typography,
   useTheme
 } from '@material-ui/core'
 
 import {
   Github,
-  TelevisionClassic
+  TelevisionClassic,
+  Information
 } from 'mdi-material-ui'
 
-import { VoicesPage } from './pages'
+import {
+  VoicesPage,
+  AboutPage
+} from './pages'
 
 const komoriAA = `
 言いたいことがあるんだよ！
@@ -34,6 +40,16 @@ const komoriAA = `
 世界で一番ひきこもり！
 ひ・き・こ・も・り！！
 `
+
+const routers = [{
+  path: '/',
+  exact: true,
+  render: () => <VoicesPage />
+}, {
+  path: '/about',
+  exact: true,
+  render: () => <AboutPage />
+}]
 
 const App = () : JSX.Element => {
   useEffect(() => {
@@ -57,13 +73,20 @@ const App = () : JSX.Element => {
             `}
           />
 
-          <Typography
+          <Button
+            variant = 'text'
+            component = {Link}
+            to = '/'
+            color = 'inherit'
             css = {css`
               flex: 1;
+              > .MuiButton-label {
+                justify-content: flex-start;
+              }
             `}
           >
             Komori Chiyu Button
-          </Typography>
+          </Button>
 
           <Tooltip title = "bilibili">
             <IconButton
@@ -73,6 +96,16 @@ const App = () : JSX.Element => {
               target = '_blank'
             >
               <TelevisionClassic />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title = "About">
+            <IconButton
+              color = 'inherit'
+              component = {Link}
+              to = '/about'
+            >
+              <Information />
             </IconButton>
           </Tooltip>
 
@@ -94,7 +127,11 @@ const App = () : JSX.Element => {
           margin-top: ${theme.spacing(3)}px;
         `}
       >
-        <VoicesPage />
+        <RouterView>
+          {routers.map(({ path, render, exact }, index) => (
+            <Route key = {index} path = {path} exact = {exact} render = {render}/>
+          ))}
+        </RouterView>
       </Container>
     </Fragment>
   )

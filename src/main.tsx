@@ -3,6 +3,7 @@ import { jsx } from '@emotion/react'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as RouterProvider } from 'react-router-dom'
 
 import App from './App'
 
@@ -36,7 +37,9 @@ ReactDOM.render(
     <ThemeProvider theme = {theme}>
       <VocalistProvider>
         <OptionsProvider>
-          <App />
+          <RouterProvider>
+            <App />
+          </RouterProvider>
         </OptionsProvider>
       </VocalistProvider>
     </ThemeProvider>
