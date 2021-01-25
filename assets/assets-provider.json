@@ -271,5 +271,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.10/dist/哇哦~.mp3"
     ],
     "version": "0.0.10"
+  },
+  "@voices/2021/01/25/歌回/不是我-你搞错人了！.mp3": {
+    "OID": "sha256:3d6acf07b69cbe2fc1a873c9d4b338513020bdffc97807fce60c03726a61ba20",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.12/dist/不是我-你搞错人了！.mp3"
+    ],
+    "version": "0.0.12"
   }
 }

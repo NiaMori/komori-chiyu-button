@@ -64,6 +64,12 @@ export const lives = {
     date: '2021-01-22',
     url: 'https://www.bilibili.com/video/BV1Wo4y1R78C'
   } as Live,
+
+  '2021-01-25-歌回': {
+    desc: '歌回',
+    date: '2021-01-25',
+    url: ''
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives

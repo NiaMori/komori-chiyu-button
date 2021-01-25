@@ -373,4 +373,13 @@ export const voices: Voice[] = [{
     interval: ['42:56.642', '42:57.873']
   },
   tags: ['古守 x nano']
+}, {
+  desc: '不是我，你搞错人了！',
+  path: '@voices/2021/01/25/歌回/不是我-你搞错人了！.mp3',
+  date: '2021-01-25T06:32:50.116-08:00',
+  origin: {
+    live: '2021-01-25-歌回',
+    interval: ['', '']
+  },
+  tags: ['可爱古守']
 }]
