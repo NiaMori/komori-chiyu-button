@@ -381,5 +381,14 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
+ tags: ['可爱古守']
+}, {
+  desc: 'Can you marry me?',
+  path: '@voices/2021/01/25/歌回/can-you-marry-me.mp3',
+  date: '2021-01-25T07:00:50.811-08:00',
+  origin: {
+    live: '2021-01-25-歌回',
+    interval: ['', '']
+  },
   tags: ['可爱古守']
 }]

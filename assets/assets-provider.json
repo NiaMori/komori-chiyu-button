@@ -278,5 +278,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.12/dist/不是我-你搞错人了！.mp3"
     ],
     "version": "0.0.12"
+  },
+  "@voices/2021/01/25/歌回/can-you-marry-me.mp3": {
+    "OID": "sha256:2056c50838a1b02e027d76c3006191eabb5cb572aac5eaee781b332eb118753a",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.12/dist/can-you-marry-me.mp3"
+    ],
+    "version": "0.0.12"
   }
 }
