@@ -285,5 +285,103 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.13/dist/不是我-你搞错人了！.mp3"
     ],
     "version": "0.0.13"
+  },
+  "@voices/2021/01/25/歌回/古守姐姐~.mp3": {
+    "OID": "sha256:c4ca3b1cbca8b2086a98f87465ec464cb2fc0c58bc40eaae003e1e035724aa40",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.14/dist/古守姐姐~.mp3"
+    ],
+    "version": "0.0.14"
+  },
+  "@voices/2021/01/25/歌回/古宝？古宝！.mp3": {
+    "OID": "sha256:a149f4654ba8ae78dbfee50e64a2306f47bb59ac6f066cc15e49586a72bcb79d",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.14/dist/古宝？古宝！.mp3"
+    ],
+    "version": "0.0.14"
+  },
+  "@voices/2021/01/25/歌回/啾啾~.mp3": {
+    "OID": "sha256:84b76e434c4e0d9b8d3804f39d5565f4ea126a1a24c9df882a88e38551d6dc34",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.14/dist/啾啾~.mp3"
+    ],
+    "version": "0.0.14"
+  },
+  "@voices/2021/01/25/歌回/守子哥.mp3": {
+    "OID": "sha256:c62f67b4aeca601fbcd3d2c0200d52b71b9ddd3b27063feeffa0a3d1fb8f4432",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.14/dist/守子哥.mp3"
+    ],
+    "version": "0.0.14"
+  },
+  "@voices/2021/01/25/歌回/守子哥？守子哥？啊——.mp3": {
+    "OID": "sha256:fa7722f0c1a60a8450274ecb44013a55805259dd5b9bdffda266dfee1da29a44",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.14/dist/守子哥？守子哥？啊——.mp3"
+    ],
+    "version": "0.0.14"
+  },
+  "@voices/2021/01/25/歌回/古守了不起.mp3": {
+    "OID": "sha256:e3dcbbc5c2f7a1f59e3407386605332f3ac8b12ec2694b22e36d9e5652fe73db",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.15/dist/古守了不起.mp3"
+    ],
+    "version": "0.0.15"
+  },
+  "@voices/2021/01/25/歌回/古宝守子哥.mp3": {
+    "OID": "sha256:4481e52e790bbdbabe4f2d43f2e1c7a68b94c63e525d38460b825153e15759d5",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.15/dist/古宝守子哥.mp3"
+    ],
+    "version": "0.0.15"
+  },
+  "@voices/2021/01/25/歌回/咻咻古宝.mp3": {
+    "OID": "sha256:f43df505fe1162b06ef1460b1f70e6116f94a490ae001327950ec8f5bc3fcbee",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.15/dist/咻咻古宝.mp3"
+    ],
+    "version": "0.0.15"
+  },
+  "@voices/2021/01/25/歌回/啾啾古宝.mp3": {
+    "OID": "sha256:12a6926e08bbb65f7ce5418a94893007e67a625eefeff1049a3f9a261619e644",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.15/dist/啾啾古宝.mp3"
+    ],
+    "version": "0.0.15"
+  },
+  "@voices/2021/01/25/歌回/打喷嚏-2.mp3": {
+    "OID": "sha256:c473bf55b334e2a48afd8420c2cfc8e6b255d95055954dcb2757b8753a875da9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.15/dist/打喷嚏-2.mp3"
+    ],
+    "version": "0.0.15"
+  },
+  "@voices/2021/01/25/歌回/nano-punch！.mp3": {
+    "OID": "sha256:72289e7ce16639bfbe1c027df1aecd667bce95cc054813c463b1160a250e49ef",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.16/dist/nano-punch！.mp3"
+    ],
+    "version": "0.0.16"
+  },
+  "@voices/2021/01/25/歌回/古守也最喜欢了~.mp3": {
+    "OID": "sha256:372bf4499b1c52d3bd755d8eaa0033016c5324c4a1be9c6268e2469ff9d4a01c",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.16/dist/古守也最喜欢了~.mp3"
+    ],
+    "version": "0.0.16"
+  },
+  "@voices/2021/01/25/歌回/最喜欢肉肉们了！.mp3": {
+    "OID": "sha256:4eaa8f1007a852aeae97e3ff90d86f79157e6547ac97105e6c868e8242362885",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.16/dist/最喜欢肉肉们了！.mp3"
+    ],
+    "version": "0.0.16"
+  },
+  "@voices/2021/01/25/歌回/肉肉最喜欢了（？.mp3": {
+    "OID": "sha256:5f0f90640745d2287d20c4a4bd28e0bc877c7ddc8faf01b1eca0f44fb3d7e489",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.16/dist/肉肉最喜欢了（？.mp3"
+    ],
+    "version": "0.0.16"
   }
 }
