@@ -12,12 +12,12 @@ export interface FromWebPage {
 
 export type Origin = FromLive | FromWebPage
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
 export const isFromLive = (it: any) : it is FromLive => {
   return typeof it.live === 'string'
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
 export const isFromWebPage = (it: any) : it is FromWebPage => {
   return typeof it.desc === 'string' && typeof it.url === 'string'
 }
