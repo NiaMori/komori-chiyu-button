@@ -49,7 +49,7 @@ export const VoicesPage = () : JSX.Element => {
     </Grid>
 
     {
-      newVoices.length
+      !!newVoices.length
       && <VoicesCard tag = {'最近更新'} voices = {newVoices}></VoicesCard>
     }
 
