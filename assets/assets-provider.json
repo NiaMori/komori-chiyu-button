@@ -383,5 +383,26 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.16/dist/肉肉最喜欢了（？.mp3"
     ],
     "version": "0.0.16"
+  },
+  "@images/friend-links/komori-bilibili.webp": {
+    "OID": "sha256:3a5180640f2aa1184b11386db07a53c603998cf053a6fdb37810ed98128e38c5",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.17/dist/komori-bilibili.webp"
+    ],
+    "version": "0.0.17"
+  },
+  "@images/friend-links/komori-fan-club.webp": {
+    "OID": "sha256:71e5cb863ec8ec1b1ade9a5ce9ec621ac8bd98346d305370909aba9ff665ea1c",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.17/dist/komori-fan-club.webp"
+    ],
+    "version": "0.0.17"
+  },
+  "@images/komori-hat.svg": {
+    "OID": "sha256:09a21bd712ac7a18db7fddde3e1b424c3b33811ec301b1aecc247e955bb8eeef",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.17/dist/komori-hat.svg"
+    ],
+    "version": "0.0.17"
   }
 }
