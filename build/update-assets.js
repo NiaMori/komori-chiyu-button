@@ -29,7 +29,7 @@ const getLastestVersion = async (name) => {
   return info.split(/\n/)[1]
 }
 
-const ignore = new Set(['@images/komori-hat.svg'])
+const ignore = new Set([])
 
 const main = async () => {
   const data = JSON.parse(fs.readFileSync('./assets/assets-provider.json').toLocaleString())
