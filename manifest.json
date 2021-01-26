@@ -1,11 +1,8 @@
 {
-  "komori-hat.svg": {
-    "file": "assets/komori-hat.e0b31cc0.svg"
-  },
   "index.js": {
-    "file": "assets/index.62c23981.js",
+    "file": "assets/index.9166a055.js",
     "imports": [
-      "assets/vender.13a4b3ce.js"
+      "assets/vender.e1911452.js"
     ]
   }
 }
