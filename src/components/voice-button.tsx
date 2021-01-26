@@ -60,6 +60,7 @@ export const VoiceButton = ({
       css = {css`
         margin-right: ${isNew ? theme.spacing(3) : theme.spacing(1)}px;
         margin-bottom: ${theme.spacing(2)}px;
+        z-index: 2;
       `}
     >
       <Box>
@@ -82,7 +83,7 @@ export const VoiceButton = ({
           open = {isLoading}
           css = {css`
             position: absolute;
-            z-index: 4;
+            z-index: 1;
           `}
         >
           <span
