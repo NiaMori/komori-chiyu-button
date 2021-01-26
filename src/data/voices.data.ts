@@ -381,7 +381,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
- tags: ['可爱古守']
+  tags: ['可爱古守']
 }, {
   desc: 'Can you marry me?',
   path: '@voices/2021/01/25/歌回/can-you-marry-me.mp3',
@@ -390,7 +390,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守与肉肉']
 }, {
   desc: '古宝？古宝！',
   path: '@voices/2021/01/25/歌回/古宝？古宝！.mp3',
@@ -399,7 +399,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守古守']
 }, {
   desc: '古守姐姐~',
   path: '@voices/2021/01/25/歌回/古守姐姐~.mp3',
@@ -408,7 +408,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守古守']
 }, {
   desc: '啾啾~',
   path: '@voices/2021/01/25/歌回/啾啾~.mp3',
@@ -426,7 +426,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守古守']
 }, {
   desc: '守子哥',
   path: '@voices/2021/01/25/歌回/守子哥.mp3',
@@ -435,7 +435,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守古守']
 }, {
   desc: '打喷嚏-2',
   path: '@voices/2021/01/25/歌回/打喷嚏-2.mp3',
@@ -453,7 +453,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守古守']
 }, {
   desc: '古守了不起',
   path: '@voices/2021/01/25/歌回/古守了不起.mp3',
@@ -489,7 +489,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守 x nano']
 }, {
   desc: '肉肉最喜欢了（？',
   path: '@voices/2021/01/25/歌回/肉肉最喜欢了（？.mp3',
@@ -498,7 +498,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守与肉肉']
 }, {
   desc: '最喜欢肉肉们了！',
   path: '@voices/2021/01/25/歌回/最喜欢肉肉们了！.mp3',
@@ -507,7 +507,7 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守与肉肉']
 }, {
   desc: '古守也最喜欢了~',
   path: '@voices/2021/01/25/歌回/古守也最喜欢了~.mp3',
@@ -516,5 +516,5 @@ export const voices: Voice[] = [{
     live: '2021-01-25-歌回',
     interval: ['', '']
   },
-  tags: ['可爱古守']
+  tags: ['古守与肉肉']
 }]
