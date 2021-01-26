@@ -94,6 +94,7 @@ const App = () : JSX.Element => {
               component = 'a'
               href = 'https://space.bilibili.com/2299184/'
               target = '_blank'
+              rel = 'noopener'
             >
               <TelevisionClassic />
             </IconButton>
@@ -115,6 +116,7 @@ const App = () : JSX.Element => {
               component = 'a'
               href = 'https://github.com/NiaMori/komori-chiyu-button'
               target = '_blank'
+              rel = 'noopener'
             >
               <Github />
             </IconButton>
