@@ -1,18 +1,6 @@
-const modules = import.meta.globEager('./**/*.{wav,mp3,svg,jpg,png,webp}')
-
 import assetsProvider from './assets-provider.json'
 
-export const assets: {
-  [path: string] : {
-    src: string
-  }
-} = Object.assign({}, ...Object.keys(modules).map((path) => {
-  return {
-    [path.replace(/^\.\//, '@')]: {
-      src: modules[path].default as string
-    }
-  }
-}))
+import KomoriHat from './images/komori-hat.svg'
 
 export const url = (path: string) : string => {
   if (import.meta.env.MODE === 'production') {
@@ -26,5 +14,9 @@ export const url = (path: string) : string => {
     }
   }
 
-  return assets[path].src
+  if (path === '@images/komori-hat.svg') {
+    return KomoriHat
+  }
+
+  return path.replace(/@/, '/assets/')
 }
