@@ -77,7 +77,7 @@ var e=Object.assign;import{u as s,c as t,j as i,B as a,r as o,a as n,b as c,d as
                 height: 100%;
               `},i(I,{onClick:()=>window.open(n,"_blank","noopener"),css:t`
                   height: 100%;
-                `},i(C,{avatar:i(F,e({},c)),title:s,subheader:o}))))))))},Te=({text:e,url:s})=>i(k,{component:"a",href:s,target:"_blank",rel:"noopener",css:t`
+                `},i(C,{avatar:i(F,e({},c)),title:s,subheader:o}))))))))},Te=({text:e,url:s})=>i(k,{color:"secondary",component:"a",href:s,target:"_blank",rel:"noopener",css:t`
         text-transform: none;
       `},e),Oe=()=>{const e=s();return i(o.Fragment,null,i(w,{elevation:2,css:t`
         padding: ${e.spacing(2)}px;
