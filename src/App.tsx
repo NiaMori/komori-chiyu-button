@@ -80,6 +80,7 @@ const App = () : JSX.Element => {
             color = 'inherit'
             css = {css`
               flex: 1;
+              text-transform: none;
               > .MuiButton-label {
                 justify-content: flex-start;
               }
