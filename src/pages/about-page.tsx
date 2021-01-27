@@ -107,6 +107,7 @@ const FriendLinks = () => {
 const ExternalLink = ({ text, url }: { text: string, url: string }) : JSX.Element => {
   return (
     <Button
+      color = 'secondary'
       component = 'a'
       href = {url}
       target = '_blank'
