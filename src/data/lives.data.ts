@@ -72,7 +72,7 @@ export const lives = {
   } as Live,
 
   '2021-01-27-LPL同时视听': {
-    desc: 'LPL 同时试听',
+    desc: 'LPL 同时视听',
     date: '2021-01-27',
     url: ''
   } as Live,
