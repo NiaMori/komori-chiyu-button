@@ -600,5 +600,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/软软打招呼.mp3"
     ],
     "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/啊（吸气）太可怜了吧！.mp3": {
+    "OID": "sha256:66d00ccd4c77475ce80fea0cba263cfb712e61d0bee4df347f9272ce1a2192c4",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.19/dist/啊（吸气）太可怜了吧！.mp3"
+    ],
+    "version": "0.0.19"
   }
 }
