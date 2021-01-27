@@ -404,5 +404,201 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.17/dist/komori-hat.svg"
     ],
     "version": "0.0.17"
+  },
+  "@voices/2021/01/27/LPL同时视听/了不起吧（轻笑）.mp3": {
+    "OID": "sha256:cd56da21d5693efabac6e6b99b4575ddfdbce35c38673ad5117c27b5141e05bb",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/了不起吧（轻笑）.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/十分困（可爱）.mp3": {
+    "OID": "sha256:75722cb9328200b9d0a28c25e8b6047205a24a18b0d8e3ee5510b3711bcfd53f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/十分困（可爱）.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/古守可是知道的哦.mp3": {
+    "OID": "sha256:48f2e742f92e77929561d5da64f10f190d932c3d480c1000bb5301077c9a9a8f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/古守可是知道的哦.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/古守，动起来啊！.mp3": {
+    "OID": "sha256:4b4fca5ff3f1943ddb34dc286f04bd1351d635b53b1ba346742c2b54506f32f1",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/古守，动起来啊！.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/呦西呦西-prpr.mp3": {
+    "OID": "sha256:d397b9f69ba088cb58836582596a354fbf1b4e750124af87317e0e4fc5c00842",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/呦西呦西-prpr.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-1.mp3": {
+    "OID": "sha256:a6b495ad491af8d2f2bfc42fbb50f200bfdd04a55130eee295b9a71d18b8e764",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-1.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-10-哈欠停不下来.mp3": {
+    "OID": "sha256:9397d1dfae099ee7816a7478e30101b2ba20301612430a021eb9eea06d7b4777",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-10-哈欠停不下来.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-11.mp3": {
+    "OID": "sha256:8b9c9f9188eab822e72c42616bd533e5cbd45971c2b192986ade9f6badcc9d16",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-11.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-2.mp3": {
+    "OID": "sha256:a4019da0bf4b9298b8606ebe5c9f6bb0228653db695fe5a114043dcb068b7f2e",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-2.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-3.mp3": {
+    "OID": "sha256:7d6f589956c3bfc77f173f449ad2416f20cf4621a2786a8f274797d5a560c1e2",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-3.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-4.mp3": {
+    "OID": "sha256:3b1da676cbd039048c30d9891b6c3ebd497abfd3d460e6c3a52b4b7194e21c2c",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-4.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-5.mp3": {
+    "OID": "sha256:94201c2c3dff4b1900792c6dab83b540f8999e7440d1087a4217018c862d44f0",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-5.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-6.mp3": {
+    "OID": "sha256:b3fc6b064698ad62403612d7434763c03956e62683bcff7237629d4c61060c8a",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-6.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-7-不好又要打哈欠了.mp3": {
+    "OID": "sha256:c98698c534a7df5b014c6e21c51fd7e06e605a820458424072d2a9b3d6b1ca3b",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-7-不好又要打哈欠了.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-8.mp3": {
+    "OID": "sha256:8b86535211a160334fcb5fd8d6e5d36630a9cc2e25bbc7afa41488bfb04ac46d",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-8.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哈欠-9.mp3": {
+    "OID": "sha256:16bc64c6fdbf50d24afecbdb766690fb13b11c2b2a959fbe372ee1de3222c8ce",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哈欠-9.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/哦？哦！哦——.mp3": {
+    "OID": "sha256:5a595f13129d5f71a55a3f737e7efe6becaf2326a5b94c7c6a2aec420af82f21",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/哦？哦！哦——.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/啊.mp3": {
+    "OID": "sha256:c9e4e8f933da5234d8db62e87ba65a1cfb9b03fcf98def8954b2d50ee304d052",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/啊.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/啊呜.mp3": {
+    "OID": "sha256:322b9136a86a288449af69abc09a628848081474d73a1b70376946ef31b7f347",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/啊呜.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/啊（吸气）太可爱了吧！.mp3": {
+    "OID": "sha256:66d00ccd4c77475ce80fea0cba263cfb712e61d0bee4df347f9272ce1a2192c4",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/啊（吸气）太可爱了吧！.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/嗯...这次是.mp3": {
+    "OID": "sha256:f5a3c4a5394ea866f89d5f6f29e94d950a48464a9b9dc4186f8f81021474d7c9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/嗯...这次是.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/救救我.mp3": {
+    "OID": "sha256:222c42a57ce62a6620a9808ed3eb0c9039c37a582ecac79cce8703124bac6ba9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/救救我.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/欧尼酱？.mp3": {
+    "OID": "sha256:96f14b5ef52c6156766322dcc6f9f6ef3e9d4f9a13f0ac3166f105fc939b21a8",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/欧尼酱？.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/爸爸？.mp3": {
+    "OID": "sha256:983bbcc5af3c832b5f727d50b335f61c92eeb1fa4b9d976ef9b4a080b7e4cab7",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/爸爸？.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/真是的不要啊.mp3": {
+    "OID": "sha256:942d570c3fa47fe465b6e2ebba2217d2a897bd0285fd9f8a20b70164130b9f74",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/真是的不要啊.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/谁？是古守啊！.mp3": {
+    "OID": "sha256:486452affce24f8bc8671c009f4a328d751d4f6e8edccf50dc581b1a1e1cb2a9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/谁？是古守啊！.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/软软你好.mp3": {
+    "OID": "sha256:ed6f8334fed43dbf8e4e917c903049434a55aaa58bc6be3ca79328c6eeaef616",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/软软你好.mp3"
+    ],
+    "version": "0.0.18"
+  },
+  "@voices/2021/01/27/LPL同时视听/软软打招呼.mp3": {
+    "OID": "sha256:9c71d3f48c4dd1deb8d9fecc30d4cc6089c28f3a482c4c6ae059b1c43000837d",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.18/dist/软软打招呼.mp3"
+    ],
+    "version": "0.0.18"
   }
 }

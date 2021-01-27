@@ -70,6 +70,12 @@ export const lives = {
     date: '2021-01-25',
     url: ''
   } as Live,
+
+  '2021-01-27-LPL同时视听': {
+    desc: 'LPL 同时试听',
+    date: '2021-01-27',
+    url: ''
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives
