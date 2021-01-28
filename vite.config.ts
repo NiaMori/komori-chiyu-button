@@ -12,7 +12,6 @@ export default defineConfig({
   ],
 
   build: {
-    base: 'https://cdn.jsdelivr.net/gh/NiaMori/komori-chiyu-button@gh-pages',
     manifest: true
   }
 })

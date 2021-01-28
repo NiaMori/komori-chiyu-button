@@ -968,10 +968,10 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.8.26:
-  version "0.8.32"
-  resolved "https://registry.npm.taobao.org/esbuild/download/esbuild-0.8.32.tgz?cache=0&sync_timestamp=1610603125682&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fesbuild%2Fdownload%2Fesbuild-0.8.32.tgz#d3d679ea417925f7afaab37555e52070df317355"
-  integrity sha1-09Z56kF5JfevqrN1VeUgcN8xc1U=
+esbuild@^0.8.34:
+  version "0.8.36"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.8.36.tgz#f5b7c61473721c7d53ffe7c88708e25f3b6182f3"
+  integrity sha512-kcUQB61Tf8rLJ3mOwP2ruWi/iFufaQcEs4No+JA6e7W2kMOtFExOsbyeFpEF6zNacwk2RF5fYUz5jfZwgn/SJg==
 
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -2570,12 +2570,12 @@ value-equal@^1.0.1:
   resolved "https://registry.npmjs.org/value-equal/-/value-equal-1.0.1.tgz#1e0b794c734c5c0cade179c437d356d931a34d6c"
   integrity sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==
 
-vite@^2.0.0-beta.19:
-  version "2.0.0-beta.30"
-  resolved "https://registry.npm.taobao.org/vite/download/vite-2.0.0-beta.30.tgz?cache=0&sync_timestamp=1610723662241&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvite%2Fdownload%2Fvite-2.0.0-beta.30.tgz#d0c1056d1fb05c489614360f92363eebec41a6b4"
-  integrity sha1-0MEFbR+wXEiWFDYPkjY+6+xBprQ=
+vite@^2.0.0-beta.51:
+  version "2.0.0-beta.51"
+  resolved "https://registry.npmjs.org/vite/-/vite-2.0.0-beta.51.tgz#c844744d5dbc8bd5d425fa8785813b2029069d40"
+  integrity sha512-61lmEbkTwum6lqoAoVLptFGxl3y+2Wrk3J+WiANcqa3cAerutZIFQwhrbloa8IzrlE9UR9n9zX841/G2095oIA==
   dependencies:
-    esbuild "^0.8.26"
+    esbuild "^0.8.34"
     postcss "^8.2.1"
     resolve "^1.19.0"
     rollup "^2.35.1"
