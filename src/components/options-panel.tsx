@@ -81,6 +81,20 @@ export const OptionsPanel = ({
         <FormGroup row>
           <FormControlLabel
             control = {<Switch />}
+            label = "循环播放"
+            value = {options.loop}
+            onChange = {(event, newValue) => modify(it => it.loop = newValue)}
+          />
+
+          <FormControlLabel
+            control = {<Switch />}
+            label = "允许重叠"
+            value = {options.overlap}
+            onChange = {(event, newValue) => modify(it => it.overlap = newValue)}
+          />
+
+          <FormControlLabel
+            control = {<Switch />}
             label = "显示所有声音"
             value = {options.showAllVoices}
             onChange = {(event, newValue) => modify(it => it.showAllVoices = newValue)}

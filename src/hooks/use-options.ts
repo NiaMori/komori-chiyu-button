@@ -1,11 +1,13 @@
 import { useCallback } from 'react'
-import { createStateContext } from 'react-use'
+import { createStateContext, useLatest } from 'react-use'
 import produce, { Draft } from 'immer'
 
 export interface Options {
   gachiValue: number,
   showAllVoices: boolean,
-  showSexyKomori: boolean
+  showSexyKomori: boolean,
+  loop: boolean,
+  overlap: boolean
 }
 
 export interface OptionsMethods {
@@ -17,7 +19,9 @@ export type OptionsHook = [Options, OptionsMethods]
 export const [useOptionsState, OptionsProvider] = createStateContext<Options>({
   gachiValue: 100,
   showAllVoices: false,
-  showSexyKomori: false
+  showSexyKomori: false,
+  loop: false,
+  overlap: false
 })
 
 export const useOptions = () : OptionsHook => {
