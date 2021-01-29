@@ -18,6 +18,7 @@ export interface Sound {
 
 export interface Vocalist {
   sounds: Record<string, Sound>,
+  soundsIndex: string[]
 }
 
 export interface VocalistMethods {
@@ -28,7 +29,8 @@ export interface VocalistMethods {
 export type VocalistHook = [Vocalist, VocalistMethods]
 
 export const [useVocalistState, VocalistProvider] = createStateContext<Vocalist>({
-  sounds: {}
+  sounds: {},
+  soundsIndex: []
 })
 
 const isLoaded = (ref: () => Howl | null) : boolean => {
@@ -49,15 +51,22 @@ export const useVocalist = () : VocalistHook => {
 
           delete self.sounds[id]
         }
+
+        self.soundsIndex = []
       }
 
-      if (self.sounds[sound.id]) {
-        self.sounds[sound.id].stop()
+      const { id } = sound
+
+      if (self.sounds[id]) {
+        self.sounds[id].stop()
+        self.soundsIndex.splice(self.soundsIndex.findIndex((it) => it === id), 1)
       }
+
+      self.soundsIndex.push(id)
 
       const state = isLoaded(sound.ref) ? 'playing' : 'loading'
 
-      self.sounds[sound.id] = {
+      self.sounds[id] = {
         ...sound,
         state
       }
@@ -77,8 +86,10 @@ export const useVocalist = () : VocalistHook => {
       } else if (event === 'end') {
         self.sounds[id].state = 'stopped'
 
-        if (!getOption('loop') && Object.keys(self.sounds).length != 1) {
+        if (!getOption('loop')) {
           delete self.sounds[id]
+
+          self.soundsIndex.splice(self.soundsIndex.findIndex((it) => it === id), 1)
         }
       } else if (event === 'loaded') {
         self.sounds[id].state = 'playing'

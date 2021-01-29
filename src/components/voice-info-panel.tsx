@@ -2,6 +2,8 @@
 import { jsx, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
+import { useEffect, useRef } from 'react'
+
 import {
   Card,
   CardContent,
@@ -20,7 +22,8 @@ import {
   voices as allVoices,
   Origin,
   isFromLive,
-  isFromWebPage
+  isFromWebPage,
+  Voice
 } from '../data'
 
 export interface VoiceInfoPanelProps {
@@ -60,14 +63,22 @@ export const VoiceInfoPanel = ({
 }: VoiceInfoPanelProps) : JSX.Element => {
   const theme = useTheme()
 
-  const [{ sounds }] = useVocalist()
+  const [{ sounds, soundsIndex }] = useVocalist()
 
-  const id = Object.keys(sounds)[0] ?? 'null'
+  const id = soundsIndex[soundsIndex.length - 1]
   const currentSound = sounds[id]
 
+  const prevVoiceRef = useRef<Voice>()
+
+  useEffect(() => {
+    if (currentSound) {
+      prevVoiceRef.current = currentSound.voice
+    }
+  }, [currentSound])
+
   const {
-    voice = allVoices[0],
-    state = 'unloaded'
+    voice = prevVoiceRef.current ?? allVoices[0],
+    state = 'stopped'
   } = currentSound ?? {}
 
   const {
@@ -91,18 +102,6 @@ export const VoiceInfoPanel = ({
   return (
     <Card className = {className}>
       <CardContent>
-        {Object.keys(sounds).map((id) => {
-          const { voice, state } = sounds[id]
-          const { desc } = voice
-          return (
-            <div key = {id}>
-              《{ desc }》- {state === 'loading' ? 'lording' : state}
-            </div>
-          )
-        })}
-
-        <Divider />
-
         <Typography variant = 'h5'>
           《{ desc }》- {state === 'loading' ? 'lording' : state}
         </Typography>
