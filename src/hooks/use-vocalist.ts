@@ -1,84 +1,101 @@
 import { useCallback } from 'react'
-import { createStateContext } from 'react-use'
+import { createStateContext, useLatest } from 'react-use'
 import produce from 'immer'
 
 import { Voice } from '../data'
+import { useOptions } from './use-options'
 import { Howl } from 'howler'
 
 export interface Sound {
-  load: () => void,
+  id: string,
+  voice: Voice,
+  ref: () => Howl | null,
   play: () => void,
   stop: () => void,
-  voice: Voice,
-  tag: string,
-  howl: Howl
-}
 
-export interface Vocalist {
-  currentSound: Sound | null
   state: 'unloaded' | 'loading' | 'stopped' | 'playing'
 }
 
+export interface Vocalist {
+  sounds: Record<string, Sound>,
+}
+
 export interface VocalistMethods {
-  switchTo: (sound: Sound) => void,
-  triggerOnPlay: () => void,
-  triggerOnEnd: () => void,
-  triggerOnLoaded: () => void
+  switchTo: (sound: Omit<Sound, 'state'>) => void,
+  dispatchEvent: ({ event, id }: { event: 'play' | 'end' | 'stop' | 'loaded', id: string }) => void
 }
 
 export type VocalistHook = [Vocalist, VocalistMethods]
 
 export const [useVocalistState, VocalistProvider] = createStateContext<Vocalist>({
-  currentSound: null,
-  state: 'unloaded'
+  sounds: {}
 })
+
+const isLoaded = (ref: () => Howl | null) : boolean => {
+  const instance = ref()
+  return !!instance && instance.state() === 'loaded'
+}
 
 export const useVocalist = () : VocalistHook => {
   const [vocalist, setVocalist] = useVocalistState()
 
+  const [{ loop, overlap }] = useOptions()
+
+  // TODO: refactor useOptions to give latest options
+  const latestLoop = useLatest(loop)
+  const isLooping = useCallback(() => latestLoop.current, [latestLoop])
+
   const switchTo = useCallback<VocalistMethods['switchTo']>((sound) => {
     setVocalist(base => produce(base, (self) => {
-      if (self.currentSound) {
-        self.currentSound.stop()
+      if (!overlap) {
+        for (const id of Object.keys(self.sounds)) {
+          self.sounds[id].stop()
+
+          delete self.sounds[id]
+        }
       }
 
-      self.currentSound = sound
-
-      if (self.currentSound.howl.state() === 'loaded') {
-        self.state = 'playing'
-      } else {
-        self.state = 'loading'
+      if (self.sounds[sound.id]) {
+        self.sounds[sound.id].stop()
       }
 
-      self.currentSound.load()
-      self.currentSound.play()
-    }))
-  }, [setVocalist])
+      const state = isLoaded(sound.ref) ? 'playing' : 'loading'
 
-  const triggerOnPlay = useCallback(() => {
-    setVocalist(base => produce(base, (self) => {
-      self.state = 'playing'
-    }))
-  }, [setVocalist])
+      self.sounds[sound.id] = {
+        ...sound,
+        state
+      }
 
-  const triggerOnEnd = useCallback(() => {
-    setVocalist(base => produce(base, (self) => {
-      self.state = 'stopped'
+      sound.play()
     }))
-  }, [setVocalist])
+  }, [overlap, setVocalist])
 
-  const triggerOnLoaded = useCallback(() => {
+  const dispatchEvent = useCallback<VocalistMethods['dispatchEvent']>(({ event, id }) => {
     setVocalist(base => produce(base, (self) => {
-      self.state = 'playing'
+      if (!self.sounds[id]) {
+        return
+      }
+
+      if (event === 'play') {
+        self.sounds[id].state = 'playing'
+      } else if (event === 'end') {
+        self.sounds[id].state = 'stopped'
+
+        if (!isLooping() && Object.keys(self.sounds).length != 1) {
+          delete self.sounds[id]
+        }
+      } else if (event === 'loaded') {
+        self.sounds[id].state = 'playing'
+      } else if (event === 'stop') {
+        self.sounds[id].state = 'stopped'
+      }
     }))
-  }, [setVocalist])
+  }, [isLooping, setVocalist])
 
   return [
     vocalist, {
       switchTo,
-      triggerOnPlay,
-      triggerOnEnd,
-      triggerOnLoaded
+      dispatchEvent
     }
   ]
 }

@@ -60,10 +60,14 @@ export const VoiceInfoPanel = ({
 }: VoiceInfoPanelProps) : JSX.Element => {
   const theme = useTheme()
 
-  const [{ currentSound, state }] = useVocalist()
+  const [{ sounds }] = useVocalist()
+
+  const id = Object.keys(sounds)[0] ?? 'null'
+  const currentSound = sounds[id]
 
   const {
-    voice = allVoices[0]
+    voice = allVoices[0],
+    state = 'unloaded'
   } = currentSound ?? {}
 
   const {
@@ -87,6 +91,18 @@ export const VoiceInfoPanel = ({
   return (
     <Card className = {className}>
       <CardContent>
+        {Object.keys(sounds).map((id) => {
+          const { voice, state } = sounds[id]
+          const { desc } = voice
+          return (
+            <div key = {id}>
+              《{ desc }》- {state === 'loading' ? 'lording' : state}
+            </div>
+          )
+        })}
+
+        <Divider />
+
         <Typography variant = 'h5'>
           《{ desc }》- {state === 'loading' ? 'lording' : state}
         </Typography>

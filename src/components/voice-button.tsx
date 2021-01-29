@@ -42,13 +42,9 @@ export const VoiceButton = ({
 
   const isNew = isNewVoice(voice)
 
-  const [{ state, currentSound }] = useVocalist()
-
-  const isLoadingRaw = state === 'loading'
-    && !!currentSound
-    && currentSound.voice.path == path
-    && currentSound.tag == tag
-
+  const [{ sounds }] = useVocalist()
+  const id = `${path}#${tag}`
+  const isLoadingRaw = !!sounds[id] && sounds[id].state === 'loading'
   const isLoading = useDebounced(isLoadingRaw, 150)
 
   return (

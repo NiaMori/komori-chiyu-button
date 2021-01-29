@@ -1,44 +1,87 @@
 import { url } from '../../assets/assets.meta'
 
-import { useCallback } from 'react'
+import { useCallback, useEffect, useMemo, useRef } from 'react'
 
-import useSound from 'use-sound'
 import { useVocalist } from './use-vocalist'
 
 import { Voice } from '../data'
 
 import { reportVoicePlayback } from '../analytics'
+import { useOptions } from './use-options'
+import { Howl } from 'howler'
 
-export const useVoicePlayback = ({ voice, tag }: { voice: Voice, tag: string }) : { play: () => void } => {
-  const [, { switchTo, triggerOnPlay, triggerOnEnd, triggerOnLoaded }] = useVocalist()
+export interface UseVoicePlaybackProps {
+  voice: Voice,
+  tag: string
+}
 
-  const [playSound, {
-    stop: stopSound,
-    sound
-  } ] =  useSound(url(voice.path), {
-    preload: false,
-    onplay: () => { reportVoicePlayback(voice), triggerOnPlay() },
-    onend: triggerOnEnd,
-    onload: triggerOnLoaded
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } as any)
+export interface UseVoicePlaybackHook {
+  play: () => void
+}
 
-  const play = useCallback(() => {
-    if (sound) {
-      switchTo({
-        voice,
-        tag,
-        howl: sound,
-        load: () => {
-          if (sound.state() == 'unloaded') {
-            sound.load()
-          }
-        },
-        play: playSound,
-        stop: stopSound
+export const useVoicePlayback = ({
+  voice,
+  tag
+}: UseVoicePlaybackProps) : UseVoicePlaybackHook => {
+  const [, { switchTo, dispatchEvent }] = useVocalist()
+
+  const soundRef = useRef<Howl>()
+
+  const id = useMemo(() => `${voice.path}#${tag}`, [tag, voice.path])
+
+  const [{ loop }] = useOptions()
+
+  const playSound = useCallback(() => {
+    if (!soundRef.current) {
+      soundRef.current = new Howl({
+        src: url(voice.path),
+        loop
       })
     }
-  }, [playSound, stopSound, sound, voice, tag, switchTo])
+
+    soundRef.current.off()
+    soundRef.current.on('load', () => dispatchEvent({ event: 'loaded', id }))
+    soundRef.current.on('play', () => dispatchEvent({ event: 'play', id }))
+    soundRef.current.on('end', () => dispatchEvent({ event: 'end', id }))
+    soundRef.current.on('stop', () => dispatchEvent({ event: 'stop', id }))
+
+    soundRef.current.loop(loop)
+
+    if (soundRef.current.state() === 'unloaded') {
+      soundRef.current.load()
+    }
+
+    soundRef.current.play()
+  }, [loop, voice.path, dispatchEvent, id])
+
+  const stopSound = useCallback(() => {
+    if (soundRef.current && soundRef.current.playing()) {
+      soundRef.current.stop()
+      soundRef.current.off()
+    }
+  }, [])
+
+  const play = useCallback(() => {
+    switchTo({
+      id,
+      voice,
+      play: playSound,
+      stop: stopSound,
+      ref: () => soundRef.current ?? null
+    })
+  }, [switchTo, id, voice, playSound, stopSound])
+
+  useEffect(() => {
+    soundRef.current?.loop(loop)
+  }, [loop])
+
+  useEffect(() => {
+    return () => {
+      if (soundRef.current) {
+        soundRef.current.stop()
+      }
+    }
+  }, [])
 
   return {
     play
