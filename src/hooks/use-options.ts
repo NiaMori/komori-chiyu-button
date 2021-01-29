@@ -11,6 +11,7 @@ export interface Options {
 }
 
 export interface OptionsMethods {
+  getOption: <T extends keyof Options>(name: T) => Options[T],
   modify: (recipe: (draft: Draft<Options>) => void) => void
 }
 
@@ -27,6 +28,11 @@ export const [useOptionsState, OptionsProvider] = createStateContext<Options>({
 export const useOptions = () : OptionsHook => {
   const [options, setOptions] = useOptionsState()
 
+  const latestOptions = useLatest(options)
+  const getOption = useCallback<OptionsMethods['getOption']>(name => {
+    return latestOptions.current[name]
+  }, [latestOptions])
+
   const modify = useCallback<OptionsMethods['modify']>((recipe) => {
     setOptions(base => produce(base, draft => {
       recipe(draft)
@@ -35,6 +41,7 @@ export const useOptions = () : OptionsHook => {
 
   return [
     options, {
+      getOption,
       modify
     }
   ]

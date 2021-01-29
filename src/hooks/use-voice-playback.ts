@@ -29,13 +29,13 @@ export const useVoicePlayback = ({
 
   const id = useMemo(() => `${voice.path}#${tag}`, [tag, voice.path])
 
-  const [{ loop }] = useOptions()
+  const [{ loop }, { getOption }] = useOptions()
 
   const playSound = useCallback(() => {
     if (!soundRef.current) {
       soundRef.current = new Howl({
         src: url(voice.path),
-        loop
+        loop: getOption('loop')
       })
     }
 
@@ -45,14 +45,14 @@ export const useVoicePlayback = ({
     soundRef.current.on('end', () => dispatchEvent({ event: 'end', id }))
     soundRef.current.on('stop', () => dispatchEvent({ event: 'stop', id }))
 
-    soundRef.current.loop(loop)
+    soundRef.current.loop(getOption('loop'))
 
     if (soundRef.current.state() === 'unloaded') {
       soundRef.current.load()
     }
 
     soundRef.current.play()
-  }, [loop, voice.path, dispatchEvent, id])
+  }, [getOption, voice.path, dispatchEvent, id])
 
   const stopSound = useCallback(() => {
     if (soundRef.current && soundRef.current.playing()) {

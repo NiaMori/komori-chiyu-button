@@ -39,11 +39,7 @@ const isLoaded = (ref: () => Howl | null) : boolean => {
 export const useVocalist = () : VocalistHook => {
   const [vocalist, setVocalist] = useVocalistState()
 
-  const [{ loop, overlap }] = useOptions()
-
-  // TODO: refactor useOptions to give latest options
-  const latestLoop = useLatest(loop)
-  const isLooping = useCallback(() => latestLoop.current, [latestLoop])
+  const [{ overlap }, { getOption }] = useOptions()
 
   const switchTo = useCallback<VocalistMethods['switchTo']>((sound) => {
     setVocalist(base => produce(base, (self) => {
@@ -81,7 +77,7 @@ export const useVocalist = () : VocalistHook => {
       } else if (event === 'end') {
         self.sounds[id].state = 'stopped'
 
-        if (!isLooping() && Object.keys(self.sounds).length != 1) {
+        if (!getOption('loop') && Object.keys(self.sounds).length != 1) {
           delete self.sounds[id]
         }
       } else if (event === 'loaded') {
@@ -90,7 +86,7 @@ export const useVocalist = () : VocalistHook => {
         self.sounds[id].state = 'stopped'
       }
     }))
-  }, [isLooping, setVocalist])
+  }, [getOption, setVocalist])
 
   return [
     vocalist, {
