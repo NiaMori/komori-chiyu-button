@@ -62,6 +62,8 @@ export const useVoicePlayback = ({
   }, [])
 
   const play = useCallback(() => {
+    reportVoicePlayback(voice)
+
     switchTo({
       id,
       voice,
