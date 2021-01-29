@@ -10,7 +10,13 @@ export interface FromWebPage {
   url: string
 }
 
-export type Origin = FromLive | FromWebPage
+export interface FromVideo {
+  desc: string,
+  url: string,
+  interval: [string, string]
+}
+
+export type Origin = FromLive | FromWebPage | FromVideo
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
 export const isFromLive = (it: any) : it is FromLive => {
@@ -20,6 +26,11 @@ export const isFromLive = (it: any) : it is FromLive => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
 export const isFromWebPage = (it: any) : it is FromWebPage => {
   return typeof it.desc === 'string' && typeof it.url === 'string'
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
+export const isFromVideo = (it: any) : it is FromWebPage => {
+  return typeof it.desc === 'string' && typeof it.url === 'string' && typeof it.interval === 'object'
 }
 
 export interface Voice {
@@ -769,4 +780,14 @@ export const voices: Voice[] = [{
     interval: ['3:51:52.369', '3:51:59.483']
   },
   tags: ['困困古守']
+}, {
+  desc: '你说什么？',
+  path: '@voices/bilibili/BV1Jz4y1S7mT/你说什么？.mp3',
+  date: '2021-01-29T08:35:54.199-08:00',
+  origin: {
+    desc: '【暗妃鲁咪蕾】圣 Cup 战争（Komori 篇）',
+    url: 'https://www.bilibili.com/video/BV1Jz4y1S7mT',
+    interval: ['00:07.678', '00:08.864']
+  },
+  tags: ['嚣张古守']
 }]

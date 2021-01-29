@@ -607,5 +607,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.19/dist/啊（吸气）太可怜了吧！.mp3"
     ],
     "version": "0.0.19"
+  },
+  "@voices/bilibili/BV1Jz4y1S7mT/你说什么？.mp3": {
+    "OID": "sha256:b8b216f2267967362e5a9e7fee3260ca59263c112640a82a1d2d1ef4bc16e830",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.20/dist/你说什么？.mp3"
+    ],
+    "version": "0.0.20"
   }
 }

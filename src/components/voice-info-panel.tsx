@@ -23,6 +23,7 @@ import {
   Origin,
   isFromLive,
   isFromWebPage,
+  isFromVideo,
   Voice
 } from '../data'
 
@@ -31,7 +32,7 @@ export interface VoiceInfoPanelProps {
 }
 
 const getOriginInfo = (origin: Origin) : { url: string, desc: string } => {
-  if (isFromWebPage(origin)) {
+  if (isFromWebPage(origin) || isFromVideo(origin)) {
     return origin
   } else if (isFromLive(origin)) {
     const live = lives[origin.live]
