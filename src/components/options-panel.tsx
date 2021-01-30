@@ -32,6 +32,20 @@ const marks = [{
   label: 'gachi'
 }]
 
+const switches = [{
+  name: 'loop',
+  desc: '循环播放'
+}, {
+  name: 'overlap',
+  desc: '允许重叠'
+}, {
+  name: 'showAllVoices',
+  desc: '显示所有声音'
+}, {
+  name: 'showSexyKomori',
+  desc: '允许涩古守'
+}] as const
+
 export const OptionsPanel = ({
   className
 }: OptionsPanelProps) : JSX.Element => {
@@ -79,33 +93,18 @@ export const OptionsPanel = ({
         </Grid>
 
         <FormGroup row>
-          <FormControlLabel
-            control = {<Switch />}
-            label = "循环播放"
-            value = {options.loop}
-            onChange = {(event, newValue) => modify(it => it.loop = newValue)}
-          />
-
-          <FormControlLabel
-            control = {<Switch />}
-            label = "允许重叠"
-            value = {options.overlap}
-            onChange = {(event, newValue) => modify(it => it.overlap = newValue)}
-          />
-
-          <FormControlLabel
-            control = {<Switch />}
-            label = "显示所有声音"
-            value = {options.showAllVoices}
-            onChange = {(event, newValue) => modify(it => it.showAllVoices = newValue)}
-          />
-
-          <FormControlLabel
-            control = {<Switch />}
-            label = "允许涩古守"
-            value = {options.showSexyKomori}
-            onChange = {(event, newValue) => modify(it => it.showSexyKomori = newValue)}
-          />
+          {switches.map(({ name, desc }) => (
+            <FormControlLabel
+              key = {name}
+              control = {
+                <Switch
+                  checked = {options[name]}
+                  onChange = {(event) => modify(it => it[name] = event.target.checked)}
+                />
+              }
+              label = {desc}
+            />
+          ))}
         </FormGroup>
       </CardContent>
     </Card>
