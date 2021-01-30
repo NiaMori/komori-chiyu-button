@@ -17,7 +17,6 @@ import {
 
 import {
   VocalistProvider,
-  OptionsProvider
 } from './hooks'
 
 const theme = createMuiTheme({
@@ -38,11 +37,9 @@ ReactDOM.render(
 
     <ThemeProvider theme = {theme}>
       <VocalistProvider>
-        <OptionsProvider>
-          <RouterProvider>
-            <App />
-          </RouterProvider>
-        </OptionsProvider>
+        <RouterProvider>
+          <App />
+        </RouterProvider>
       </VocalistProvider>
     </ThemeProvider>
   </React.StrictMode>,

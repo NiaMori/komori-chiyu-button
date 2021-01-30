@@ -1,6 +1,8 @@
 import { useCallback } from 'react'
-import { createStateContext, useLatest } from 'react-use'
+import { useLatest } from 'react-use'
 import produce, { Draft } from 'immer'
+
+import { createPersistedHook } from './create-persisited-hook'
 
 export interface Options {
   gachiValue: number,
@@ -17,16 +19,18 @@ export interface OptionsMethods {
 
 export type OptionsHook = [Options, OptionsMethods]
 
-export const [useOptionsState, OptionsProvider] = createStateContext<Options>({
-  gachiValue: 100,
-  showAllVoices: false,
-  showSexyKomori: false,
-  loop: false,
-  overlap: false
+const useOptionsState = createPersistedHook({
+  key: '@komori-chiyu-button/options'
 })
 
 export const useOptions = () : OptionsHook => {
-  const [options, setOptions] = useOptionsState()
+  const [options, setOptions] = useOptionsState<Options>({
+    gachiValue: 100,
+    showAllVoices: false,
+    showSexyKomori: false,
+    loop: false,
+    overlap: false
+  })
 
   const latestOptions = useLatest(options)
   const getOption = useCallback<OptionsMethods['getOption']>(name => {
