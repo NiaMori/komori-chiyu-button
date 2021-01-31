@@ -1,5 +1,7 @@
 import { LiveIndex } from './lives.data'
 
+import { Language } from '../i18n'
+
 export interface FromLive {
   live: LiveIndex,
   interval: [string, string]
@@ -39,6 +41,7 @@ export interface Voice {
   date: string,
   origin: Origin,
   tags: string[],
+  translation?: Partial<Record<Language, Record<string, string>>>,
   gachiRanges?: [number, number][]
 }
 
@@ -55,6 +58,9 @@ export const voices: Voice[] = [{
   origin: {
     live: '2020-12-24-古守平安夜',
     interval: ['1:25.799', '1:29.205']
+  },
+  translation: {
+    ja: { '吼吼吼吼~': 'ja(吼吼吼吼~)' }
   },
   tags: ['嚣张古守']
 }, {

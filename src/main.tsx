@@ -19,6 +19,10 @@ import {
   VocalistProvider,
 } from './hooks'
 
+import { configureI18N } from './i18n'
+
+configureI18N()
+
 const theme = createMuiTheme({
   palette: {
     primary: {
