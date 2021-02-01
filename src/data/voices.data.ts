@@ -1,5 +1,5 @@
 import { LiveIndex } from './lives.data'
-
+import { Tag } from './tags.data'
 import { Language } from '../i18n'
 
 export interface FromLive {
@@ -40,7 +40,7 @@ export interface Voice {
   path: string,
   date: string,
   origin: Origin,
-  tags: string[],
+  tags: Tag[],
   translation?: Partial<Record<Language, Record<string, string>>>,
   gachiRanges?: [number, number][]
 }
@@ -48,8 +48,6 @@ export interface Voice {
 export const isNewVoice = ({ date }: Voice) : boolean => {
   return (Date.now() - Date.parse(date)) < 86400000
 }
-
-export const sexyTags = ['涩涩古守']
 
 export const voices: Voice[] = [{
   desc: '吼吼吼吼~',
