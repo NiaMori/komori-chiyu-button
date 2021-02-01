@@ -27,7 +27,8 @@ import {
   TelevisionClassic,
   Information,
   DotsVertical,
-  Home
+  Home,
+  Translate
 } from 'mdi-material-ui'
 
 interface Item {
@@ -67,6 +68,8 @@ const bindAction = ({ url, external, onClick }: Item['action']) => {
 }
 
 const useItems = () : Item[] => {
+  const { t, i18n } = useTranslation()
+
   return useMemo(() => {
     return [{
       desc: 'Bilibili',
@@ -100,8 +103,21 @@ const useItems = () : Item[] => {
         url: '/about',
         external: false,
       }
+    }, {
+      desc: i18n.language === 'zh-CN' ? t('切换到日文', { lng: 'ja' }) : t('切换到中文', { lng: 'zh-CN' }),
+      icon: <Translate />,
+      type: 'secondary',
+      action: {
+        onClick: () => {
+          if (i18n.language === 'zh-CN') {
+            i18n.changeLanguage('ja')
+          } else {
+            i18n.changeLanguage('zh-CN')
+          }
+        }
+      }
     }]
-  }, [])
+  }, [i18n, t])
 }
 
 const useMenu = () => {
