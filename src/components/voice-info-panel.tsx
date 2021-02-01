@@ -17,6 +17,8 @@ import {
 
 import { useVocalist } from '../hooks'
 
+import { useTranslation } from 'react-i18next'
+
 import {
   lives,
   voices as allVoices,
@@ -63,6 +65,7 @@ export const VoiceInfoPanel = ({
   className
 }: VoiceInfoPanelProps) : JSX.Element => {
   const theme = useTheme()
+  const { t } = useTranslation()
 
   const [{ sounds, soundsIndex }] = useVocalist()
 
@@ -111,7 +114,7 @@ export const VoiceInfoPanel = ({
 
         <Grid container>
           <Grid item css = {styles.flexVCenter}>
-            来源：
+            {t('来源')}：
           </Grid>
 
           <Grid item xs>
@@ -121,7 +124,7 @@ export const VoiceInfoPanel = ({
 
         <Grid container>
           <Grid item css = {styles.flexVCenter}>
-            标签：
+            {t('标签')}：
           </Grid>
 
           <Grid item xs
@@ -132,7 +135,7 @@ export const VoiceInfoPanel = ({
             `}
           >
             {tags.map((tag) => (
-              <Chip key = {tag} variant = {'outlined'} label = {tag} onClick = {() => null}/>
+              <Chip key = {tag} variant = {'outlined'} label = {t(tag)} onClick = {() => null}/>
             ))}
           </Grid>
         </Grid>

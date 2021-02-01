@@ -7,6 +7,8 @@ import { Switch as RouterView, Route, Link } from 'react-router-dom'
 
 import { url } from '../assets/assets.meta'
 
+import { useTranslation } from 'react-i18next'
+
 import {
   AppBar,
   Avatar,
@@ -109,6 +111,8 @@ const App = () : JSX.Element => {
 
   const theme = useTheme()
 
+  const { t }  = useTranslation()
+
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -147,7 +151,7 @@ const App = () : JSX.Element => {
           </Button>
 
           {items.filter(it => it.type === 'primary').map(({ url, desc, external, icon }) => (
-            <Tooltip title = {desc} key = {url}>
+            <Tooltip title = {t(desc) ?? ''} key = {url}>
               <IconButton
                 color = 'inherit'
                 { ...bindLink({ url, external }) }
@@ -159,7 +163,7 @@ const App = () : JSX.Element => {
 
           <Hidden xsDown>
             {items.filter(it => it.type === 'secondary').map(({ url, desc, external, icon }) => (
-              <Tooltip title = {desc} key = {url}>
+              <Tooltip title = {t(desc) ?? ''} key = {url}>
                 <IconButton
                   color = 'inherit'
                   { ...bindLink({ url, external }) }
@@ -202,7 +206,7 @@ const App = () : JSX.Element => {
                   css = {css`
                     margin-left: ${theme.spacing(1)}px;
                   `}
-                >{desc}</span>
+                >{t(desc)}</span>
               </MenuItem>
             ))}
           </Menu>

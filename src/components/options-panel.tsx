@@ -15,6 +15,8 @@ import {
   useTheme
 } from '@material-ui/core'
 
+import { useTranslation } from 'react-i18next'
+
 import { useOptions } from '../hooks'
 
 export interface OptionsPanelProps {
@@ -50,6 +52,8 @@ export const OptionsPanel = ({
   className
 }: OptionsPanelProps) : JSX.Element => {
   const theme = useTheme()
+  const { t } = useTranslation()
+
   const [options, { modify }] = useOptions()
 
   const Divider = styled(UnStyledDivider)`
@@ -61,7 +65,7 @@ export const OptionsPanel = ({
     <Card className = {className}>
       <CardContent>
         <Typography variant = 'h5'>
-          设置
+          {t('设置')}
         </Typography>
 
         <Divider />
@@ -69,7 +73,7 @@ export const OptionsPanel = ({
         <Grid container>
           <Grid item>
             <Typography>
-              gachi 浓度：
+              { t('gachi 浓度') }：
             </Typography>
           </Grid>
 
@@ -102,7 +106,7 @@ export const OptionsPanel = ({
                   onChange = {(event) => modify(it => it[name] = event.target.checked)}
                 />
               }
-              label = {desc}
+              label = {t(desc)}
             />
           ))}
         </FormGroup>

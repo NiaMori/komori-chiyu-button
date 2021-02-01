@@ -17,6 +17,8 @@ import {
   useOptions
 } from '../hooks'
 
+import { useTranslation } from 'react-i18next'
+
 import {
   voices as allVoices,
   isNewVoice
@@ -24,6 +26,7 @@ import {
 
 export const VoicesPage = () : JSX.Element => {
   const theme = useTheme()
+  const { t } = useTranslation()
 
   const [options] = useOptions()
   const { voices } = useVoices(options)
@@ -50,7 +53,7 @@ export const VoicesPage = () : JSX.Element => {
 
     {
       !!newVoices.length
-      && <VoicesCard tag = {'最近更新'} voices = {newVoices}></VoicesCard>
+      && <VoicesCard tag = {t('最近更新')} voices = {newVoices}></VoicesCard>
     }
 
     <Cards columnGap = {theme.spacing(5)}>

@@ -15,6 +15,8 @@ import {
 
 import { VoiceButton } from './voice-button'
 
+import { useTranslation } from 'react-i18next'
+
 import { Voice } from '../data'
 
 export interface VoicesCardProps {
@@ -27,6 +29,7 @@ export const VoicesCard = ({
   voices
 }: VoicesCardProps) : JSX.Element => {
   const theme = useTheme()
+  const { t } = useTranslation()
 
   const Divider = styled(UnStyledDivider)`
     margin-top: ${theme.spacing(2)}px;
@@ -73,7 +76,7 @@ export const VoicesCard = ({
         <Divider />
 
         <Typography align = 'center'>
-          {tag}
+          {t(tag)}
         </Typography>
 
       </CardContent>

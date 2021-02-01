@@ -20,6 +20,8 @@ import {
   isNewVoice
 } from '../data'
 
+import { useTranslation } from 'react-i18next'
+
 export interface VoiceButtonProps {
   className?: string,
   voice: Voice,
@@ -32,6 +34,7 @@ export const VoiceButton = ({
   className
 }: VoiceButtonProps) : JSX.Element => {
   const theme = useTheme()
+  const { t } = useTranslation()
 
   const { desc, path } = voice
 
@@ -71,7 +74,7 @@ export const VoiceButton = ({
               opacity: ${isLoading ? 0 : 1};
             `}
           >
-            {desc}
+            {t(desc)}
           </span>
         </Button>
 

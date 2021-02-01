@@ -20,6 +20,8 @@ import {
   useTheme
 } from '@material-ui/core'
 
+import { useTranslation } from 'react-i18next'
+
 const friendLinks = [{
   name: '古守血遊 official',
   desc: 'Chucolala 所属 古守ちゆ',
@@ -48,6 +50,7 @@ const useResponsiveColumnCount = () => {
 
 const FriendLinks = () => {
   const theme = useTheme()
+  const { t } = useTranslation()
 
   const column = useResponsiveColumnCount()
 
@@ -60,7 +63,7 @@ const FriendLinks = () => {
       `}
     >
       <Typography variant = 'h5'>
-        友情链接
+        {t('友情链接')}
       </Typography>
 
       <Divider
@@ -123,6 +126,7 @@ const ExternalLink = ({ text, url }: { text: string, url: string }) : JSX.Elemen
 
 export const AboutPage = () : JSX.Element => {
   const theme = useTheme()
+  const { t } = useTranslation()
 
   return (<Fragment>
     <Paper
@@ -132,7 +136,7 @@ export const AboutPage = () : JSX.Element => {
       `}
     >
       <Typography variant = 'h5'>
-        关于「古守血遊按钮站」
+        {t('关于「古守血遊按钮站」')}
       </Typography>
 
       <Divider
