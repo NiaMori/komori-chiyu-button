@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLGY6V94TB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag () { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-VLGY6V94TB');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komori Chiyu Button</title>
+  <link rel="icon" type="image/ico" href="https://cdn.jsdelivr.net/gh/NiaMori/komori-chiyu-button@gh-pages-dev/airport.ico">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          console.log('controllerchange')
+          window.location.reload()
+        })
+
+        navigator.serviceWorker.register('/service-worker.js')
+      })
+    }
+  </script>
+
+<script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/NiaMori/komori-chiyu-button@gh-pages-dev/assets/index.ba4512a3.js"></script>
+  <link rel="modulepreload" href="https://cdn.jsdelivr.net/gh/NiaMori/komori-chiyu-button@gh-pages-dev/assets/vender.2a76f5b6.js">
+</head>
+<body>
+  <div id="root"></div>
+  
+</body>
+</html>
