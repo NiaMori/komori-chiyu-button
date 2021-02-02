@@ -614,5 +614,75 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.20/dist/你说什么？.mp3"
     ],
     "version": "0.0.20"
+  },
+  "@voices/2019/05/26/YTB收益化纪念-生放送歌回-2nd-live/古守RAP（？.mp3": {
+    "OID": "sha256:458791b7caf780d163ad6edc284cb421b9f1d5483761f9c4b374d43c4f018abe",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/古守RAP（？.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2020/08/19/LOL-古守-雛月/baka！.mp3": {
+    "OID": "sha256:b98b07ba05bbfc0ffac089842c46ff79ff7d11ec154c33eec8b763aee8ad73c6",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/baka！.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2020/08/19/LOL-古守-雛月/pien-pien-pien.mp3": {
+    "OID": "sha256:50fda6dc4ba983f8004338eddef509e5b467aa9f001f71c5b2c8b8b28834084b",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/pien-pien-pien.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2020/10/27/打工人集合！/快夸我~.mp3": {
+    "OID": "sha256:584e0de99354e34da721aa64828a50328e79fe2e37cc7a5803e9d7417929e5dc",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/快夸我~.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2021/01/27/LPL同时视听/ZA-WARUDO！.mp3": {
+    "OID": "sha256:561113364081818022b23dc50f391b5e0551f53da62207a58440a765f6aeeac4",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/ZA-WARUDO！.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2021/01/27/LPL同时视听/欧拉欧拉欧拉.mp3": {
+    "OID": "sha256:44d87472e3968a02f959ebfe6a1836068bc48fd49886b5c4289d40e7823c3a3f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/欧拉欧拉欧拉.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2021/01/31/古守-好人-30-Apex/乓！饶不了你哦！.mp3": {
+    "OID": "sha256:149dfeb0a919a6c7a2dd708992e568ae71aed63706f8a1dff683ed222654a05f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/乓！饶不了你哦！.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2021/01/31/古守-好人-30-Apex/呜啊！.mp3": {
+    "OID": "sha256:658273b60e2d3534094fd263ae6a1934465c1e93a5d3a9cd81e8ce120103ea9f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/呜啊！.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2021/01/31/古守-好人-30-Apex/哈哈↑哈哈哈哈哈.mp3": {
+    "OID": "sha256:be89bf8302f2ece592cfeba658a6c125e512cdb43d5548ea157629520353b269",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/哈哈↑哈哈哈哈哈.mp3"
+    ],
+    "version": "0.0.21"
+  },
+  "@voices/2021/01/31/古守-好人-30-Apex/铁咩！Komori-Kick！.mp3": {
+    "OID": "sha256:31f3a4b15ba506b67398d13bc1d23587d8a79b7a86cfd59ed551e3b9fad79381",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/铁咩！Komori-Kick！.mp3"
+    ],
+    "version": "0.0.21"
   }
 }

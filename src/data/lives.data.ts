@@ -11,6 +11,18 @@ export const lives = {
     url: 'https://www.youtube.com/watch?v=knHhUNX_zSs'
   } as Live,
 
+  '2020-08-19-LOL-古守-雛月': {
+    desc: 'LOL 古守 & 雛月',
+    date: '2020-08-19',
+    url: 'https://www.bilibili.com/video/BV1MT4y1E7Lh?p=22'
+  } as Live,
+
+  '2020-10-27-打工人集合！': {
+    desc: '打工人集合！',
+    date: '2020-10-27',
+    url: 'https://www.bilibili.com/video/BV1hD4y1o7SJ?p=22'
+  } as Live,
+
   '2020-12-06-高速ringfit': {
     desc: '高速ringfit',
     date: '2020-12-06',
@@ -75,6 +87,12 @@ export const lives = {
     desc: 'LPL 同时视听',
     date: '2021-01-27',
     url: ''
+  } as Live,
+
+  '2021-01-31-古守-好人-30-Apex': {
+    desc: '古守 好人 30 Apex',
+    date: '2021-01-31',
+    url: 'https://www.bilibili.com/video/BV1oT4y1P7DR'
   } as Live,
 }
 
