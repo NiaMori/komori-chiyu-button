@@ -57,9 +57,6 @@ export const voices: Voice[] = [{
     live: '2020-12-24-古守平安夜',
     interval: ['1:25.799', '1:29.205']
   },
-  translation: {
-    ja: { '吼吼吼吼~': 'ja(吼吼吼吼~)' }
-  },
   tags: ['嚣张古守']
 }, {
   desc: '我可爱吗~',
