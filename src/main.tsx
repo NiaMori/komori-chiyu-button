@@ -16,6 +16,7 @@ import {
 } from '@material-ui/core'
 
 import {
+  OptionsProvider,
   VocalistProvider,
 } from './hooks'
 
@@ -40,11 +41,13 @@ ReactDOM.render(
     <CssBaseline />
 
     <ThemeProvider theme = {theme}>
-      <VocalistProvider>
-        <RouterProvider>
-          <App />
-        </RouterProvider>
-      </VocalistProvider>
+      <OptionsProvider>
+        <VocalistProvider>
+          <RouterProvider>
+            <App />
+          </RouterProvider>
+        </VocalistProvider>
+      </OptionsProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
