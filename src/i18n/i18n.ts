@@ -24,6 +24,7 @@ export const configureI18N = (): void => {
         '来源': 'From',
         '标签': 'タグ',
         '关于': 'About',
+        '归档': 'Archive',
         '首页': 'ホームページ',
         '友情链接': 'リンク',
         '关于「古守血遊按钮站」': '「古守ちゆのボタンサイト」について',
@@ -57,6 +58,10 @@ export const configureI18N = (): void => {
       }
     }
   }
+
+  i18n.on('languageChanged', (lng) => {
+    document.documentElement.setAttribute('lang', lng)
+  })
 
   i18n
     .use(initReactI18next)

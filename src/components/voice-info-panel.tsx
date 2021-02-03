@@ -55,7 +55,7 @@ const OriginLink = ({ origin }: { origin: Origin }) => {
   const { url, desc } = getOriginInfo(origin)
 
   return (
-    <Button component = 'a' href = {url} color = 'secondary'>
+    <Button component = 'a' href = {url} color = 'secondary' lang = 'zh-CN'>
       {desc}
     </Button>
   )
@@ -88,7 +88,8 @@ export const VoiceInfoPanel = ({
   const {
     desc,
     origin,
-    tags
+    tags,
+    translation
   } = voice
 
   const styles = {
@@ -106,8 +107,8 @@ export const VoiceInfoPanel = ({
   return (
     <Card className = {className}>
       <CardContent>
-        <Typography variant = 'h5'>
-          《{ desc }》- {state === 'loading' ? 'lording' : state}
+        <Typography variant = 'h5' lang = {translation && translation.ja ? 'ja' : 'zh-CN'}>
+          《{ t(desc) }》- {state === 'loading' ? 'lording' : state}
         </Typography>
 
         <Divider />

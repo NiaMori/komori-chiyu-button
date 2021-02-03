@@ -36,7 +36,7 @@ export const VoiceButton = ({
   const theme = useTheme()
   const { t } = useTranslation()
 
-  const { desc, path } = voice
+  const { desc, path, translation } = voice
 
   const { play } = useVoicePlayback({
     voice,
@@ -73,6 +73,7 @@ export const VoiceButton = ({
               color: #FFFCEF;
               opacity: ${isLoading ? 0 : 1};
             `}
+            lang = {translation && translation.ja ? 'ja' : 'zh-CN'}
           >
             {t(desc)}
           </span>

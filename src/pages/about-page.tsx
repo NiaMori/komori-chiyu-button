@@ -24,14 +24,14 @@ import { useTranslation } from 'react-i18next'
 
 const friendLinks = [{
   name: '古守血遊 official',
-  desc: 'Chucolala 所属 古守ちゆ',
+  desc: (<Fragment>Chucolala 所属<span lang = 'ja'>古守ちゆ</span></Fragment>),
   url: 'https://space.bilibili.com/2299184',
   avatar: {
     src: url('@images/friend-links/komori-bilibili.webp')
   }
 }, {
   name: 'Komori Fan Club',
-  desc: 'ちゅこらら所属 Vtuber 古守血遊民间二创群体',
+  desc: (<Fragment><span lang = 'ja'>ちゅこらら</span>所属 Vtuber 古守血遊民间二创群体</Fragment>),
   url: 'https://space.bilibili.com/1616870119',
   avatar: {
     src: url('@images/friend-links/komori-fan-club.webp')
@@ -86,6 +86,7 @@ const FriendLinks = () => {
               css = {css`
                 height: 100%;
               `}
+              lang = 'zh-CN'
             >
               <CardActionArea
                 onClick = {() => window.open(url, '_blank', 'noopener')}
@@ -146,13 +147,13 @@ export const AboutPage = () : JSX.Element => {
         `}
       />
 
-      <Typography>
+      <Typography lang = 'zh-CN'>
         「古守血遊按钮站」由粉丝自发创立，意在收集有趣的声音片段，让更多人喜欢上古守
       </Typography>
 
       <br />
 
-      <Typography>
+      <Typography lang = 'zh-CN'>
         <span>您可以在</span>
         <ExternalLink text = 'GitHub' url = 'https://github.com/NiaMori/komori-chiyu-button' />
         <span>参与完善本项目，或者直接联系本站的主要维护人</span>
@@ -161,7 +162,7 @@ export const AboutPage = () : JSX.Element => {
 
       <br />
 
-      <Typography>
+      <Typography lang = 'zh-CN'>
         <span>欢迎提供声音片段、更正翻译错误、提出改进建议和给出整活方案！</span>
       </Typography>
 
@@ -175,7 +176,7 @@ export const AboutPage = () : JSX.Element => {
           color: #6A737D;
         `}
       >
-        <Typography variant = 'h6'>
+        <Typography variant = 'h6' lang = 'ja'>
           Komori......Komori...... 寂しい......
         </Typography>
       </blockquote>

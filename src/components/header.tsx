@@ -35,6 +35,7 @@ import { Language } from '../i18n'
 
 interface Item {
   desc: string,
+  renderedDesc?: ReactNode,
   type: 'primary' | 'secondary' | 'only-in-menu' | 'only-outside',
   icon: ReactNode,
 
@@ -76,6 +77,7 @@ const useItems = () : Item[] => {
     const languageItem = {
       'zh-CN': {
         desc: t('日文', { lng: 'ja' }),
+        renderedDesc: <span lang = 'ja'>{t('日文', { lng: 'ja' })}</span>,
         icon: <img src = {url('@images/日.svg')} className = 'MuiSvgIcon-root' css = {css`transform: scale(0.92);`}/>,
         type: 'primary',
         action: {
@@ -85,6 +87,7 @@ const useItems = () : Item[] => {
 
       'ja': {
         desc: t('中文', { lng: 'zh-CN' }),
+        renderedDesc: <span lang = 'zh-CN'>{t('中文', { lng: 'zh-CN' })}</span>,
         icon: <img src = {url('@images/中.svg')} className = 'MuiSvgIcon-root'/>,
         type: 'primary',
         action: {
@@ -168,7 +171,7 @@ const useMenu = () => {
         horizontal: 'center',
       }}
     >
-      {items.filter(it => ['secondary', 'only-in-menu'].includes(it.type)).map(({ desc, icon, action }) => (
+      {items.filter(it => ['secondary', 'only-in-menu'].includes(it.type)).map(({ desc, renderedDesc, icon, action }) => (
         <MenuItem
           onClick = {() => {
             closeMenu()
@@ -183,7 +186,7 @@ const useMenu = () => {
               margin-left: ${theme.spacing(1)}px;
             `}
           >
-            { t(desc) }
+            { renderedDesc ?? t(desc) }
           </span>
         </MenuItem>
       ))}
@@ -230,8 +233,8 @@ export const Header = () : JSX.Element => {
           Komori Chiyu Button
         </Button>
 
-        {items.filter(it => it.type === 'primary').map(({ desc, icon, action }) => (
-          <Tooltip title = {t(desc) ?? ''} key = {desc}>
+        {items.filter(it => it.type === 'primary').map(({ desc, renderedDesc, icon, action }) => (
+          <Tooltip title = {renderedDesc ?? t(desc) ?? ''} key = {desc}>
             <IconButton
               color = 'inherit'
               { ...bindAction(action) }
@@ -242,8 +245,8 @@ export const Header = () : JSX.Element => {
         ))}
 
         <Hidden xsDown>
-          {items.filter(it => ['secondary', 'only-outside'].includes(it.type)).map(({ desc, icon, action }) => (
-            <Tooltip title = {t(desc) ?? ''} key = {desc}>
+          {items.filter(it => ['secondary', 'only-outside'].includes(it.type)).map(({ desc, renderedDesc, icon, action }) => (
+            <Tooltip title = {renderedDesc ?? t(desc) ?? ''} key = {desc}>
               <IconButton
                 color = 'inherit'
                 { ...bindAction(action) }
