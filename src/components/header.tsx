@@ -31,6 +31,8 @@ import {
   Translate
 } from 'mdi-material-ui'
 
+import { Language } from '../i18n'
+
 interface Item {
   desc: string,
   type: 'primary' | 'secondary' | 'only-in-menu',
@@ -71,7 +73,27 @@ const useItems = () : Item[] => {
   const { t, i18n } = useTranslation()
 
   return useMemo(() => {
-    return [{
+    const languageItem = {
+      'zh-CN': {
+        desc: t('日文', { lng: 'ja' }),
+        icon: <img src = {url('@images/日.svg')} className = 'MuiSvgIcon-root' css = {css`transform: scale(0.92);`}/>,
+        type: 'primary',
+        action: {
+          onClick: () => i18n.changeLanguage('ja')
+        }
+      },
+
+      'ja': {
+        desc: t('中文', { lng: 'zh-CN' }),
+        icon: <img src = {url('@images/中.svg')} className = 'MuiSvgIcon-root'/>,
+        type: 'primary',
+        action: {
+          onClick: () => i18n.changeLanguage('zh-CN')
+        }
+      }
+    } as const
+
+    return [languageItem[i18n.language as Language], {
       desc: 'Bilibili',
       icon: <TelevisionClassic />,
       type: 'primary',
@@ -102,19 +124,6 @@ const useItems = () : Item[] => {
       action: {
         url: '/about',
         external: false,
-      }
-    }, {
-      desc: i18n.language === 'zh-CN' ? t('切换到日文', { lng: 'ja' }) : t('切换到中文', { lng: 'zh-CN' }),
-      icon: <Translate />,
-      type: 'secondary',
-      action: {
-        onClick: () => {
-          if (i18n.language === 'zh-CN') {
-            i18n.changeLanguage('ja')
-          } else {
-            i18n.changeLanguage('zh-CN')
-          }
-        }
       }
     }]
   }, [i18n, t])

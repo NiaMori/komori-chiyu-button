@@ -684,5 +684,19 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.21/dist/铁咩！Komori-Kick！.mp3"
     ],
     "version": "0.0.21"
+  },
+  "@images/中.svg": {
+    "OID": "sha256:9781381a279c6893143c1779c5d967ac511abc704b265fc773cc3344def10d53",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.22/dist/中.svg"
+    ],
+    "version": "0.0.22"
+  },
+  "@images/日.svg": {
+    "OID": "sha256:5c8ea6a832c9f82a423a8f8768bde6651b4b074138120b19ca0f780c1f7ad298",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.22/dist/日.svg"
+    ],
+    "version": "0.0.22"
   }
 }
