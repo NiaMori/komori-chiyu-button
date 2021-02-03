@@ -14,7 +14,8 @@ import { Header } from './components'
 
 import {
   VoicesPage,
-  AboutPage
+  AboutPage,
+  ArchivePage
 } from './pages'
 
 const komoriAA = `
@@ -37,6 +38,10 @@ const routers = [{
   path: '/about',
   exact: true,
   render: () => <AboutPage />
+}, {
+  path: '/archive',
+  exact: true,
+  render: () => <ArchivePage />
 }]
 
 const App = () : JSX.Element => {

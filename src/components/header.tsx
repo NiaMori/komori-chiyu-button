@@ -28,14 +28,15 @@ import {
   Information,
   DotsVertical,
   Home,
-  Translate
+  Translate,
+  Archive
 } from 'mdi-material-ui'
 
 import { Language } from '../i18n'
 
 interface Item {
   desc: string,
-  type: 'primary' | 'secondary' | 'only-in-menu',
+  type: 'primary' | 'secondary' | 'only-in-menu' | 'only-outside',
   icon: ReactNode,
 
   action: {
@@ -108,6 +109,14 @@ const useItems = () : Item[] => {
       action: {
         url: '/',
         external: false
+      }
+    },{
+      desc: '归档',
+      icon: <Archive />,
+      type: 'only-outside',
+      action: {
+        url: '/archive',
+        external: false,
       }
     }, {
       desc: 'GitHub',
@@ -234,7 +243,7 @@ export const Header = () : JSX.Element => {
         ))}
 
         <Hidden xsDown>
-          {items.filter(it => it.type === 'secondary').map(({ desc, icon, action }) => (
+          {items.filter(it => ['secondary', 'only-outside'].includes(it.type)).map(({ desc, icon, action }) => (
             <Tooltip title = {t(desc) ?? ''} key = {desc}>
               <IconButton
                 color = 'inherit'
