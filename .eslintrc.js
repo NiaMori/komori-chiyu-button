@@ -23,6 +23,7 @@ module.exports = {
     semi: ['error', 'never'],
 
     'react/display-name': 'off',
+    'react/prop-types': 'off'
   },
 
   settings: {
