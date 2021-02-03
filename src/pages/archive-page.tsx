@@ -16,10 +16,12 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  TableSortLabel
+  TableSortLabel,
+  useMediaQuery,
+  useTheme
 } from '@material-ui/core'
 
-import { Download } from 'mdi-material-ui'
+import { Alert, Download } from 'mdi-material-ui'
 
 import {
   useTable,
@@ -225,6 +227,28 @@ const TheTable = () : JSX.Element => {
 }
 
 export const ArchivePage = () : JSX.Element => {
+  const theme = useTheme()
+
+  const small = useMediaQuery(theme.breakpoints.down('xs'))
+  if (small) {
+    return (
+      <Paper
+        css = {css`
+          padding: ${theme.spacing(3)}px;
+          display: flex;
+          align-items: center;
+        `}
+      >
+        <Alert css = {css`
+          color: ${theme.palette.warning.main};
+          margin-right: ${theme.spacing(2)}px;
+        `}/>
+
+        <span>本页含有大量数据，请您于横屏模式或宽屏设备下访问.</span>
+      </Paper>
+    )
+  }
+
   return (
     <Paper>
       <TheTable />
