@@ -28,7 +28,6 @@ import {
   Information,
   DotsVertical,
   Home,
-  Translate,
   Archive
 } from 'mdi-material-ui'
 

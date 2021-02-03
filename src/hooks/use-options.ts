@@ -2,8 +2,6 @@ import { useCallback } from 'react'
 import { useLatest, createStateContext } from 'react-use'
 import produce, { Draft } from 'immer'
 
-import { createPersistedHook } from './create-persisited-hook'
-
 export interface Options {
   gachiValue: number,
   showAllVoices: boolean,
