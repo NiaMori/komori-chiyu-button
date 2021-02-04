@@ -8,7 +8,6 @@ import { url } from '../../assets/assets.meta'
 import { Fragment } from 'react'
 
 import {
-  Button,
   IconButton,
   Paper,
   Table,
@@ -20,6 +19,8 @@ import {
   useMediaQuery,
   useTheme
 } from '@material-ui/core'
+
+import { OriginLink, getOriginInfo, VoiceButton } from '../components'
 
 import { Alert, Download } from 'mdi-material-ui'
 
@@ -35,48 +36,10 @@ import {
   UseSortByColumnProps
 } from 'react-table'
 
-import { VoiceButton } from '../components'
-
 import {
-  lives,
-  voices,
-  Origin,
   isFromLive,
-  isFromWebPage,
-  isFromVideo
+  voices,
 } from '../data'
-
-const getOriginInfo = (origin: Origin) : { url: string, desc: string } => {
-  if (isFromWebPage(origin) || isFromVideo(origin)) {
-    return origin
-  } else if (isFromLive(origin)) {
-    const live = lives[origin.live]
-
-    return {
-      url: live.url,
-      desc: `${live.date} 「${live.desc}」`
-    }
-  } else {
-    return {
-      url: '',
-      desc: '未知来源'
-    }
-  }
-}
-
-const OriginLink = ({ origin }: { origin: Origin }) => {
-  const { url, desc } = getOriginInfo(origin)
-
-  return (
-    <Button component = 'a' href = {url} color = 'secondary' target = '_blank'
-      css = {css`
-        width: 100%;
-      `}
-    >
-      {desc}
-    </Button>
-  )
-}
 
 const roundTime = (time: string) => {
   if (time.includes('.')) {
@@ -140,7 +103,14 @@ const columns: EnhancedColumn[] = [{
     return getOriginInfo(originA).desc.localeCompare(getOriginInfo(originB).desc)
   },
   Cell: ({ cell: { value: origin } }: CellProps<Data, Data['origin']>) => {
-    return <OriginLink origin = {origin} />
+    return (
+      <OriginLink
+        origin = {origin}
+        css = {css`
+          width: 100%;
+        `}
+      />
+    )
   }
 }, {
   accessor: 'interval' as const,

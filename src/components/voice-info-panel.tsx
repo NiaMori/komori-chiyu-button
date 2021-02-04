@@ -10,55 +10,23 @@ import {
   Typography,
   Divider as UnStyledDivider,
   Grid,
-  Button,
   Chip,
   useTheme
 } from '@material-ui/core'
+
+import { OriginLink } from './origin-link'
 
 import { useVocalist } from '../hooks'
 
 import { useTranslation } from 'react-i18next'
 
 import {
-  lives,
   voices as allVoices,
-  Origin,
-  isFromLive,
-  isFromWebPage,
-  isFromVideo,
   Voice
 } from '../data'
 
 export interface VoiceInfoPanelProps {
   className?: string
-}
-
-const getOriginInfo = (origin: Origin) : { url: string, desc: string } => {
-  if (isFromWebPage(origin) || isFromVideo(origin)) {
-    return origin
-  } else if (isFromLive(origin)) {
-    const live = lives[origin.live]
-
-    return {
-      url: live.url,
-      desc: `${live.date} 「${live.desc}」`
-    }
-  } else {
-    return {
-      url: '',
-      desc: '未知来源'
-    }
-  }
-}
-
-const OriginLink = ({ origin }: { origin: Origin }) => {
-  const { url, desc } = getOriginInfo(origin)
-
-  return (
-    <Button component = 'a' href = {url} color = 'secondary' lang = 'zh-CN'>
-      {desc}
-    </Button>
-  )
 }
 
 export const VoiceInfoPanel = ({
