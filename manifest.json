@@ -1,13 +1,44 @@
 {
   "index.html": {
-    "file": "assets/index.ba4512a3.js",
+    "file": "assets/index.aded4765.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_vender.2a76f5b6.js"
+      "_runtime.5c8f3faf.js",
+      "_react.5e2e607e.js",
+      "_vender.1cf750ff.js",
+      "_ui.0a6fb4d9.js",
+      "_react-table.2b9d25f4.js"
     ]
   },
-  "_vender.2a76f5b6.js": {
-    "file": "assets/vender.2a76f5b6.js"
+  "_vender.1cf750ff.js": {
+    "file": "assets/vender.1cf750ff.js",
+    "imports": [
+      "_runtime.5c8f3faf.js",
+      "_react.5e2e607e.js"
+    ]
+  },
+  "_react.5e2e607e.js": {
+    "file": "assets/react.5e2e607e.js",
+    "imports": [
+      "_runtime.5c8f3faf.js"
+    ]
+  },
+  "_ui.0a6fb4d9.js": {
+    "file": "assets/ui.0a6fb4d9.js",
+    "imports": [
+      "_runtime.5c8f3faf.js",
+      "_react.5e2e607e.js"
+    ]
+  },
+  "_runtime.5c8f3faf.js": {
+    "file": "assets/runtime.5c8f3faf.js"
+  },
+  "_react-table.2b9d25f4.js": {
+    "file": "assets/react-table.2b9d25f4.js",
+    "imports": [
+      "_runtime.5c8f3faf.js",
+      "_react.5e2e607e.js"
+    ]
   }
 }
