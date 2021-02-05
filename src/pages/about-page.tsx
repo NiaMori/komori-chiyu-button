@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/react'
 
 import { url } from '../../assets/assets.meta'
 
-import { Fragment } from 'react'
+import { Fragment, useMemo } from 'react'
 
 import {
   Avatar,
@@ -20,23 +20,39 @@ import {
   useTheme
 } from '@material-ui/core'
 
+import { PlaylistMusicOutline } from 'mdi-material-ui'
+
 import { useTranslation } from 'react-i18next'
 
-const friendLinks = [{
-  name: '古守血遊 official',
-  desc: (<Fragment>Chucolala 所属<span lang = 'ja'>古守ちゆ</span></Fragment>),
-  url: 'https://space.bilibili.com/2299184',
-  avatar: {
-    src: url('@images/friend-links/komori-bilibili.webp')
-  }
-}, {
-  name: 'Komori Fan Club',
-  desc: (<Fragment><span lang = 'ja'>ちゅこらら</span>所属 Vtuber 古守血遊民间二创群体</Fragment>),
-  url: 'https://space.bilibili.com/1616870119',
-  avatar: {
-    src: url('@images/friend-links/komori-fan-club.webp')
-  }
-}]
+const useFriendLinks = () => {
+  const theme = useTheme()
+
+  return useMemo(() => {
+    return [{
+      name: '古守血遊 official',
+      desc: (<Fragment>Chucolala 所属<span lang = 'ja'>古守ちゆ</span></Fragment>),
+      url: 'https://space.bilibili.com/2299184',
+      avatar: {
+        src: url('@images/friend-links/komori-bilibili.webp')
+      }
+    }, {
+      name: 'Komori Fan Club',
+      desc: (<Fragment><span lang = 'ja'>ちゅこらら</span>所属 Vtuber 古守血遊民间二创群体</Fragment>),
+      url: 'https://space.bilibili.com/1616870119',
+      avatar: {
+        src: url('@images/friend-links/komori-fan-club.webp')
+      }
+    }, {
+      name: '古守血遊网易云电台',
+      desc: '古守唱过的歌都在这里~',
+      url: 'https://music.163.com/#/djradio?id=793073480',
+      avatar: {
+        style: { backgroundColor: theme.palette.secondary.main },
+        children: <PlaylistMusicOutline/>
+      }
+    }]
+  }, [theme])
+}
 
 const useResponsiveColumnCount = () => {
   const theme = useTheme()
@@ -52,6 +68,7 @@ const FriendLinks = () => {
   const theme = useTheme()
   const { t } = useTranslation()
 
+  const friendLinks = useFriendLinks()
   const column = useResponsiveColumnCount()
 
   return (
