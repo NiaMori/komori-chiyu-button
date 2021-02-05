@@ -94,6 +94,12 @@ export const lives = {
     date: '2021-01-31',
     url: 'https://www.bilibili.com/video/BV1oT4y1P7DR'
   } as Live,
+
+  '2021-02-04-LPL观战': {
+    desc: 'LPL 观战',
+    date: '2021-02-04',
+    url: ''
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives

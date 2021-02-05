@@ -698,5 +698,82 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.22/dist/日.svg"
     ],
     "version": "0.0.22"
+  },
+  "@voices/2021/02/04/LPL观战/mua~.mp3": {
+    "OID": "sha256:a52b596d99cbf40092e46c7ea8b137cb3aec97ce647d369f028eb1f6b25c68cd",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/mua~.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/nice!+拍肚皮.mp3": {
+    "OID": "sha256:0d503fca4b1ad05366ec318e2340e9d078645fca45dfa3cf06ad1332da6f575e",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/nice!+拍肚皮.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/原来喜欢古守啊.mp3": {
+    "OID": "sha256:73084f6fbcaa0c6627992eec9160e1785419a8aca1edc01df48a6a8d4d22d279",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/原来喜欢古守啊.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/哈欠-12.mp3": {
+    "OID": "sha256:ce47b03acb357ee6e1ca367d61836063fd674c4ec83f7a1679da5c74c9a9d558",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/哈欠-12.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/哈欠-13.mp3": {
+    "OID": "sha256:f4f886a403ae4f0da1cc8a9c0f0a256663a13f8c7f3303e03c91bf599dad941f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/哈欠-13.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/哈欠-14.mp3": {
+    "OID": "sha256:d8b3a3b725b9d8240e44ddc126f9d3df4c22f649e1b423f0f6953d65e7dfec32",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/哈欠-14.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/哈欠-15.mp3": {
+    "OID": "sha256:dcb6fc44cf487ac906c5c33c5fbc11b28c3871e35a19715bec72a8a3fae3dca5",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/哈欠-15.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/哈欠-16.mp3": {
+    "OID": "sha256:b637c5e724fefdca9ba6078c07df07cf84d30ea35120e478f9608337273fa87c",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/哈欠-16.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/我~爱~你~.mp3": {
+    "OID": "sha256:c56fabaf0f2d527d6c288c2e50e8aeee963088aad6cef1d1025067cebab83dd6",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/我~爱~你~.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/我爱你-baby~.mp3": {
+    "OID": "sha256:8f0bdf870b672119f9d03e6ca8f2007db4362518a0f3f31ab7c1add873d259bc",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/我爱你-baby~.mp3"
+    ],
+    "version": "0.0.23"
+  },
+  "@voices/2021/02/04/LPL观战/我爱你.mp3": {
+    "OID": "sha256:9cc03b5ec1c55032cd19f52f41553d343aae7b1ff3d40ccf95efbd13584e7dde",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/我爱你.mp3"
+    ],
+    "version": "0.0.23"
   }
 }
