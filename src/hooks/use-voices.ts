@@ -8,7 +8,7 @@ import {
   voices as allVoices
 } from '../data'
 
-export type UseVoicesProps = Options
+export type UseVoicesProps = Pick<Options, 'gachiValue' | 'showAllVoices' | 'showSexyKomori'>
 
 export interface UseVoicesHook {
   voices: [string, Voice[]][]
