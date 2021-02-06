@@ -8,7 +8,54 @@ export const splitChunks = (): Plugin => {
         rollupOptions: {
           output: {
             manualChunks (id) {
-              if (id.includes('node_modules')) {
+              if (false
+                || id.includes('vite/dynamic-import-polyfill')
+                || id.includes('commonjsHelpers.js')
+                || id.includes('/node_modules/@babel/runtime/')
+
+                || id.includes('/node_modules/react/')
+                || id.includes('/node_modules/react-dom/')
+                || id.includes('/node_modules/react-router/')
+                || id.includes('/node_modules/react-router-dom/')
+
+                || id.includes('/node_modules/@emotion/')
+                || id.includes('/node_modules/stylis/')
+
+                || id.includes('/node_modules/object-assign/')
+                || id.includes('/node_modules/tiny-warning/')
+                || id.includes('/node_modules/tiny-invariant/')
+                || id.includes('/node_modules/react-is/')
+                || id.includes('/node_modules/hoist-non-react-statics/')
+                || id.includes('/node_modules/prop-types/')
+
+                || id.includes('/node_modules/scheduler/')
+                || id.includes('/node_modules/history/')
+                || id.includes('/node_modules/value-equal/')
+                || id.includes('/node_modules/resolve-pathname/')
+                || id.includes('/node_modules/mini-create-react-context/')
+                || id.includes('/node_modules/path-to-regexp/')
+                || id.includes('/node_modules/isarray/')
+
+                || id.includes('/node_modules/popper.js/')
+                || id.includes('/node_modules/clsx/')
+                || id.includes('/node_modules/css-vendor/')
+                || id.includes('/node_modules/is-in-browser/')
+                || id.includes('/node_modules/jss')
+                || id.includes('/node_modules/hyphenate-style-name/')
+                || id.includes('/node_modules/react-transition-group/')
+              ) {
+                return 'stable'
+              }
+
+              if (
+                false
+                || id.includes('/node_modules/@material-ui/')
+                || id.includes('/node_modules/mdi-material-ui/')
+              ) {
+                return 'ui'
+              }
+
+              if (id.includes('/node_modules/')) {
                 return 'vender'
               }
             }
