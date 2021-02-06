@@ -12,6 +12,20 @@ export default defineConfig({
   ],
 
   build: {
-    manifest: true
+    manifest: true,
+    rollupOptions: {
+      plugins: [{
+        name: 'rollup-plugin-remove-react-table-development',
+        load: (id: string) => {
+          if (id.includes('/node_modules/react-table/dist/react-table.development.js')) {
+            return {
+              code: ''
+            }
+          }
+
+          return null
+        }
+      }]
+    }
   }
 })
