@@ -7,8 +7,6 @@ import { BrowserRouter as RouterProvider } from 'react-router-dom'
 
 import App from './App'
 
-import 'howler'
-
 import {
   CssBaseline,
   createMuiTheme,
