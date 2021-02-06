@@ -10,19 +10,8 @@ const getType = (ext) => {
   throw new Error(`Unkown Extension \`${ext}\``)
 }
 
-const unique = (arr) => {
-  return [...new Set(arr)]
-}
-
-const assets = unique(Object.keys(manifest).map((key) => {
-  const {
-    file,
-    imports = []
-  } = manifest[key]
-
-  return [file, ...imports]
-}).flat()).map((path) => {
-  const [name, hash, ext] = path.split(/\./)
+const assets = Object.values(manifest).map(({ file }) => {
+  const [name, hash, ext] = file.split(/\./)
 
   const type = getType(ext)
   const crossorigin = type === 'script' ? ' crossorigin=anonymous;' : ''
@@ -30,7 +19,7 @@ const assets = unique(Object.keys(manifest).map((key) => {
   return {
     key: `${name}.${ext}`,
     hash,
-    push: `</${path}>; rel=preload; as=${type};` + crossorigin
+    push: `</${file}>; rel=preload; as=${type};` + crossorigin
   }
 })
 
@@ -58,7 +47,7 @@ const setCookie = (response, name, value) => {
   response.headers.set('Set-Cookie', `${name}=${value}`)
 }
 
-const setUpHttp2ServerPush = (request, response) => {
+export const setUpHttp2ServerPush = (request, response) => {
   if (response.headers.get('Content-Type').includes('text/html')) {
     const cookie = getCookie(request, '__http2_server_push')
 

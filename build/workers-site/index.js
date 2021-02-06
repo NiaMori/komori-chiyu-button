@@ -1,5 +1,7 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
 
+import { setUpHttp2ServerPush } from './http2-server-push'
+
 /**
  * The DEBUG flag will do two things that help during development:
  * 1. we will skip caching on the edge, which makes it easier to
@@ -44,7 +46,7 @@ const handleEvent = async (event) => {
 
     const response = await getAssetFromKV(event, options)
 
-    // setUpHttp2ServerPush(event.request, response)
+    setUpHttp2ServerPush(event.request, response)
 
     return response
   } catch (e) {
