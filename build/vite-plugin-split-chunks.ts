@@ -51,6 +51,7 @@ export const splitChunks = (): Plugin => {
                 false
                 || id.includes('/node_modules/@material-ui/')
                 || id.includes('/node_modules/mdi-material-ui/')
+                || id.includes('/node_modules/notistack/')
               ) {
                 return 'ui'
               }
