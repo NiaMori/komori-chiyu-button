@@ -24,6 +24,8 @@ import {
   isNewVoice
 } from '../data'
 
+import { useUpdateVoiceCache } from '../pwa'
+
 export const VoicesPage = () : JSX.Element => {
   const theme = useTheme()
   const { t } = useTranslation()
@@ -31,6 +33,8 @@ export const VoicesPage = () : JSX.Element => {
   const [options] = useOptions()
   const { voices } = useVoices(options)
   const newVoices = allVoices.filter(isNewVoice)
+
+  useUpdateVoiceCache()
 
   return (<Fragment>
     <Grid container spacing = {3} alignItems = 'stretch'>

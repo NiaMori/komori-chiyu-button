@@ -7,6 +7,8 @@ import { BrowserRouter as RouterProvider } from 'react-router-dom'
 
 import App from './App'
 
+import { SnackbarProvider } from 'notistack'
+
 import {
   CssBaseline,
   createMuiTheme,
@@ -39,13 +41,15 @@ ReactDOM.render(
     <CssBaseline />
 
     <ThemeProvider theme = {theme}>
-      <OptionsProvider>
-        <VocalistProvider>
-          <RouterProvider>
-            <App />
-          </RouterProvider>
-        </VocalistProvider>
-      </OptionsProvider>
+      <SnackbarProvider>
+        <OptionsProvider>
+          <VocalistProvider>
+            <RouterProvider>
+              <App />
+            </RouterProvider>
+          </VocalistProvider>
+        </OptionsProvider>
+      </SnackbarProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
