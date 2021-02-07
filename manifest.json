@@ -1,44 +1,27 @@
 {
   "index.html": {
-    "file": "assets/index.aded4765.js",
+    "file": "assets/index.f8654ac4.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_runtime.5c8f3faf.js",
-      "_react.5e2e607e.js",
-      "_vender.1cf750ff.js",
-      "_ui.0a6fb4d9.js",
-      "_react-table.2b9d25f4.js"
+      "_stable.3d1ed9c4.js",
+      "_ui.3749f8eb.js",
+      "_vender.ab49487c.js"
     ]
   },
-  "_vender.1cf750ff.js": {
-    "file": "assets/vender.1cf750ff.js",
+  "_stable.3d1ed9c4.js": {
+    "file": "assets/stable.3d1ed9c4.js"
+  },
+  "_ui.3749f8eb.js": {
+    "file": "assets/ui.3749f8eb.js",
     "imports": [
-      "_runtime.5c8f3faf.js",
-      "_react.5e2e607e.js"
+      "_stable.3d1ed9c4.js"
     ]
   },
-  "_react.5e2e607e.js": {
-    "file": "assets/react.5e2e607e.js",
+  "_vender.ab49487c.js": {
+    "file": "assets/vender.ab49487c.js",
     "imports": [
-      "_runtime.5c8f3faf.js"
-    ]
-  },
-  "_ui.0a6fb4d9.js": {
-    "file": "assets/ui.0a6fb4d9.js",
-    "imports": [
-      "_runtime.5c8f3faf.js",
-      "_react.5e2e607e.js"
-    ]
-  },
-  "_runtime.5c8f3faf.js": {
-    "file": "assets/runtime.5c8f3faf.js"
-  },
-  "_react-table.2b9d25f4.js": {
-    "file": "assets/react-table.2b9d25f4.js",
-    "imports": [
-      "_runtime.5c8f3faf.js",
-      "_react.5e2e607e.js"
+      "_stable.3d1ed9c4.js"
     ]
   }
 }
