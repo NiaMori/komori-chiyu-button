@@ -1206,6 +1206,18 @@
   dependencies:
     "@types/node" "*"
 
+"@types/workbox-build@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/@types/workbox-build/-/workbox-build-5.0.0.tgz#62a819f8ad0314dc75213dfc567f9e447ea0fcae"
+  integrity sha512-6hn6W63+U1zaTRCaHIwJTVx1FaZbXZDA9dOE/txsQk8D0nRDZLxtnTwhfyvhtxnWb+zY7nH7psuJXv4oUDZyMA==
+  dependencies:
+    "@types/workbox-routing" "*"
+
+"@types/workbox-routing@*":
+  version "4.3.0"
+  resolved "https://registry.npmjs.org/@types/workbox-routing/-/workbox-routing-4.3.0.tgz#617e00b18806630cffff550b3d2ab09866f89411"
+  integrity sha512-op5P/f6n+9g5X4a+sYONp9EALnNxpoU3oXuB/BjeQv9d+k0bNE4LYSF06K6tXYL4PeCIZVJOi4yMCUCOi2NaqQ==
+
 "@typescript-eslint/eslint-plugin@^4.13.0":
   version "4.13.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-4.13.0.tgz#5f580ea520fa46442deb82c038460c3dd3524bb6"
@@ -1641,13 +1653,6 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
-debug@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
-  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
-  dependencies:
-    ms "2.1.2"
-
 deep-is@^0.1.3:
   version "0.1.3"
   resolved "https://registry.npm.taobao.org/deep-is/download/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
@@ -1942,7 +1947,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
 
-fast-glob@^3.1.1, fast-glob@^3.2.5:
+fast-glob@^3.1.1:
   version "3.2.5"
   resolved "https://registry.npm.taobao.org/fast-glob/download/fast-glob-3.2.5.tgz?cache=0&sync_timestamp=1610876590762&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-glob%2Fdownload%2Ffast-glob-3.2.5.tgz#7939af2a656de79a4f1901903ee8adcaa7cb9661"
   integrity sha1-eTmvKmVt55pPGQGQPuityqfLlmE=
@@ -2956,7 +2961,7 @@ prepend-http@^1.0.0:
   resolved "https://registry.npmjs.org/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-pretty-bytes@^5.3.0, pretty-bytes@^5.5.0:
+pretty-bytes@^5.3.0:
   version "5.5.0"
   resolved "https://registry.npmjs.org/pretty-bytes/-/pretty-bytes-5.5.0.tgz#0cecda50a74a941589498011cf23275aa82b339e"
   integrity sha512-p+T744ZyjjiaFlMUZZv6YPC5JrkNj8maRmPaQCWFJFplUAzpIUTRaTcS+7wmZtUoFXHtESJb23ISliaWyz3SHA==
@@ -3715,16 +3720,6 @@ value-equal@^1.0.1:
   resolved "https://registry.npmjs.org/value-equal/-/value-equal-1.0.1.tgz#1e0b794c734c5c0cade179c437d356d931a34d6c"
   integrity sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==
 
-vite-plugin-pwa@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/vite-plugin-pwa/-/vite-plugin-pwa-0.4.1.tgz#eae03c4dd10cd51600c08fd1aaa179a92577c456"
-  integrity sha512-UvcdW93FT0+2dRSLasQtvJepBwXj+UTcvzBekca6YuVdn/MTdEX01J/QqPL+v3KUZBnNM2MAOFpLIkZ3wi9t8g==
-  dependencies:
-    debug "^4.3.2"
-    fast-glob "^3.2.5"
-    pretty-bytes "^5.5.0"
-    workbox-build "^6.0.2"
-
 vite@^2.0.0-beta.64:
   version "2.0.0-beta.64"
   resolved "https://registry.npmjs.org/vite/-/vite-2.0.0-beta.64.tgz#245cabc72335911d4cb704545f713d47e880d84f"
@@ -3782,7 +3777,7 @@ workbox-broadcast-update@^6.1.0:
   dependencies:
     workbox-core "^6.1.0"
 
-workbox-build@^6.0.2:
+workbox-build@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npmjs.org/workbox-build/-/workbox-build-6.1.0.tgz#e0ba4a0004da1079e934c7452c72c92ef7b52cba"
   integrity sha512-xJPqTEf+Pg9KAoTrNeVWpMjqi4cJIRn14i02bZjjbHsLNN38qrqc8xwAW48TwoPCYLjp104ST164/3RDgrc7yw==
