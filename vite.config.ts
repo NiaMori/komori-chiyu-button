@@ -4,11 +4,14 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
 import { analytics } from './build/vite-plugin-analytics'
 import { splitChunks } from './build/vite-plugin-split-chunks'
 
+import { pwa } from './build/vite-plugin-pwa'
+
 export default defineConfig({
   plugins: [
     reactRefresh(),
     analytics(),
-    splitChunks()
+    splitChunks(),
+    pwa()
   ],
 
   build: {
