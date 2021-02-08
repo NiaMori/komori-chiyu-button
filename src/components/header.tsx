@@ -230,7 +230,7 @@ export const Header = () : JSX.Element => {
             }
           `}
         >
-          Komori Chiyu Button
+          古守按钮
         </Button>
 
         {items.filter(it => it.type === 'primary').map(({ desc, renderedDesc, icon, action }) => (
