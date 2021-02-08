@@ -32,7 +32,7 @@ const getLastestVersion = async (name) => {
 const ignore = new Set([])
 
 const main = async () => {
-  const data = JSON.parse(fs.readFileSync('./assets/assets-provider.json').toLocaleString())
+  const data = JSON.parse(fs.readFileSync('./assets/assets.meta.json').toLocaleString())
 
   const newAssets = []
 
@@ -129,7 +129,7 @@ Assets for website [komori-chiyu-button](https://github.com/NiaMori/komori-chiyu
 
   console.log(chalk`{green done.}`)
 
-  fs.writeFileSync('assets/assets-provider.json', JSON.stringify(data, null, 2))
+  fs.writeFileSync('assets/assets.meta.json', JSON.stringify(data, null, 2))
 }
 
 main()

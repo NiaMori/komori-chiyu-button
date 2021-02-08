@@ -1,7 +1,7 @@
 import { Plugin, ResolvedConfig } from 'vite'
 import { injectManifest, InjectManifestConfig } from 'workbox-build'
 
-import assetsProvider from '../assets/assets-provider.json'
+import assetsMeta from '../assets/assets.meta.json'
 
 const manifest = {
   name: '古守按钮',
@@ -74,7 +74,7 @@ const generateInjectManifestOptions = (viteConfig: ResolvedConfig) : InjectManif
         warnings: []
       }
     }],
-    additionalManifestEntries: Object.entries(assetsProvider)
+    additionalManifestEntries: Object.entries(assetsMeta)
       .filter(([path]) => path.includes('@images'))
       .map(([, { provider }]) => ({ url: provider[0], revision: null }))
   }
