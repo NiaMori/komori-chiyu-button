@@ -1,4 +1,4 @@
-import { Language } from '../i18n'
+import { Language } from '../misc/i18n'
 
 export const sexyTags = ['涩涩古守']
 

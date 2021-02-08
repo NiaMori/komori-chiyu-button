@@ -1,6 +1,6 @@
 import { LiveIndex } from './lives.data'
 import { Tag } from './tags.data'
-import { Language } from '../i18n'
+import { Language } from '../misc/i18n'
 
 export interface FromLive {
   live: LiveIndex,

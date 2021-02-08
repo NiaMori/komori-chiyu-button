@@ -20,7 +20,7 @@ import {
   VocalistProvider,
 } from './hooks'
 
-import { configureI18N } from './i18n'
+import { configureI18N } from './misc/i18n'
 
 configureI18N()
 

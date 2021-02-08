@@ -31,7 +31,7 @@ import {
   Archive
 } from 'mdi-material-ui'
 
-import { Language } from '../i18n'
+import { Language } from '../misc/i18n'
 
 interface Item {
   desc: string,

@@ -6,7 +6,7 @@ import { useVocalist } from './use-vocalist'
 
 import { Voice } from '../data'
 
-import { reportVoicePlayback } from '../analytics'
+import { reportVoicePlayback } from '../misc/analytics'
 import { useOptions } from './use-options'
 import { Howl } from 'howler'
 
