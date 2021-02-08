@@ -42,6 +42,8 @@ export const useUpdateVoiceCache = (): void => {
   })
 
   useEffectOnce(() => {
+    if (import.meta.env.DEV) return
+
     const urls = voices.map(([, voiceList]) => voiceList).flat()
       .map((voice, index) => ({
         isNew: isNewVoice(voice),
