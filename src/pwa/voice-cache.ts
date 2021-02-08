@@ -55,7 +55,7 @@ export const useUpdateVoiceCache = (): void => {
       const key = '@komori-chiyu-button/offline-support-prompt-status'
       const offlineSupportUnprompted = window.localStorage.getItem(key) !== 'prompted'
 
-      if (updated && offlineSupportUnprompted) {
+      if (updated && 'serviceWorker' in navigator && offlineSupportUnprompted) {
         window.localStorage.setItem(key, 'prompted')
 
         enqueueSnackbar('离线访问支持已启用 \n 现在可以随时随地补充古守能量啦 ~', {
