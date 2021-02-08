@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import { url } from '../../assets/assets.meta'
+import { url } from '../misc/assets'
 
 import {
   Card,

@@ -1,4 +1,4 @@
-import assetsProvider from './assets-provider.json'
+import assetsProvider from '../../assets/assets-provider.json'
 
 export const url = (path: string) : string => {
   if (import.meta.env.MODE === 'production') {

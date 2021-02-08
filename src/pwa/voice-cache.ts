@@ -1,4 +1,4 @@
-import { url } from '../../assets/assets.meta'
+import { url } from '../misc/assets'
 
 import { useEffectOnce } from 'react-use'
 import { useSnackbar } from 'notistack'

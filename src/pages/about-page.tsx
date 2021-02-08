@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/react'
 
-import { url } from '../../assets/assets.meta'
+import { url } from '../misc/assets'
 
 import { Fragment, useMemo } from 'react'
 

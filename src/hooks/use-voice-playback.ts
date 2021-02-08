@@ -1,4 +1,4 @@
-import { url } from '../../assets/assets.meta'
+import { url } from '../misc/assets'
 
 import { useCallback, useEffect, useMemo, useRef } from 'react'
 

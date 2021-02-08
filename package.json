@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build --base=https://cdn.jsdelivr.net/gh/NiaMori/komori-chiyu-button@gh-pages/",
     "deploy": "yarn run gh-pages -t -d dist",
-    "lint": "yarn run eslint src assets/assets.meta.ts --fix"
+    "lint": "yarn run eslint src --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.1.4",

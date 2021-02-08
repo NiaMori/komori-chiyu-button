@@ -5,7 +5,7 @@ import { ReactNode, useMemo, useState } from 'react'
 
 import { Link } from 'react-router-dom'
 
-import { url } from '../../assets/assets.meta'
+import { url } from '../misc/assets'
 
 import { useTranslation } from 'react-i18next'
 
