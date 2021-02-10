@@ -1,27 +1,27 @@
 {
   "index.html": {
-    "file": "assets/index.852e5169.js",
+    "file": "assets/index.fbbb9d3d.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_stable.c0b9ed68.js",
-      "_ui.587059d8.js",
-      "_vender.d99e63de.js"
+      "_stable.e6c2b37f.js",
+      "_ui.372fbfe2.js",
+      "_vender.96d0e1fb.js"
     ]
   },
-  "_stable.c0b9ed68.js": {
-    "file": "assets/stable.c0b9ed68.js"
+  "_stable.e6c2b37f.js": {
+    "file": "assets/stable.e6c2b37f.js"
   },
-  "_ui.587059d8.js": {
-    "file": "assets/ui.587059d8.js",
+  "_ui.372fbfe2.js": {
+    "file": "assets/ui.372fbfe2.js",
     "imports": [
-      "_stable.c0b9ed68.js"
+      "_stable.e6c2b37f.js"
     ]
   },
-  "_vender.d99e63de.js": {
-    "file": "assets/vender.d99e63de.js",
+  "_vender.96d0e1fb.js": {
+    "file": "assets/vender.96d0e1fb.js",
     "imports": [
-      "_stable.c0b9ed68.js"
+      "_stable.e6c2b37f.js"
     ]
   }
 }
