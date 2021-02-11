@@ -162,14 +162,6 @@ const useMenu = () => {
       keepMounted
       open = {Boolean(anchorEl)}
       onClose = {closeMenu}
-      anchorOrigin = {{
-        vertical: 'bottom',
-        horizontal: 'center',
-      }}
-      transformOrigin = {{
-        vertical: 'top',
-        horizontal: 'center',
-      }}
     >
       {items.filter(it => ['secondary', 'only-in-menu'].includes(it.type)).map(({ desc, renderedDesc, icon, action }) => (
         <MenuItem
