@@ -15,6 +15,7 @@ export const configureI18N = (): void => {
   }> = {
     'ja': {
       translation: {
+        '@language-code': 'ja',
         '设置': '設定',
         'gachi 浓度': 'ガチ度',
         '显示所有声音': 'すべての声を表示する',
@@ -34,7 +35,7 @@ export const configureI18N = (): void => {
 
     'zh-CN': {
       translation: {
-        //
+        '@language-code': 'zh-CN'
       }
     }
   }

@@ -96,7 +96,7 @@ const useItems = () : Item[] => {
       }
     } as const
 
-    return [languageItem[i18n.language as Language], {
+    return [languageItem[t('@language-code') as Language], {
       desc: 'Bilibili',
       icon: <TelevisionClassic />,
       type: 'primary',
