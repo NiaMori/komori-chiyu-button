@@ -11,7 +11,7 @@ import {
   useTheme
 } from '@material-ui/core'
 
-import { Header } from './components'
+import { Header, BreadcrumbsNavBar } from './components'
 
 import {
   VoicesPage,
@@ -96,11 +96,15 @@ const App = () : JSX.Element => {
           margin-top: ${theme.spacing(3)}px;
         `}
       >
-        <RouterView>
-          {routers.map(({ path, render, exact }, index) => (
-            <Route key = {index} path = {path} exact = {exact} render = {render}/>
-          ))}
-        </RouterView>
+        <Fragment>
+          <BreadcrumbsNavBar />
+
+          <RouterView>
+            {routers.map(({ path, render, exact }, index) => (
+              <Route key = {index} path = {path} exact = {exact} render = {render}/>
+            ))}
+          </RouterView>
+        </Fragment>
       </Container>
     </Fragment>
   )
