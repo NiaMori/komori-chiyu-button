@@ -20,7 +20,7 @@ import {
   useTheme
 } from '@material-ui/core'
 
-import { PlaylistMusicOutline } from 'mdi-material-ui'
+import { Forum, ForumOutline, PlaylistMusicOutline } from 'mdi-material-ui'
 
 import { useTranslation } from 'react-i18next'
 
@@ -49,6 +49,17 @@ const useFriendLinks = () => {
       avatar: {
         style: { backgroundColor: theme.palette.secondary.main },
         children: <PlaylistMusicOutline/>
+      }
+    }, {
+      name: 'NGA 古守血遊专楼',
+      desc: <span><del>发情</del> 肉肉们的聚集地 (桃园)</span>,
+      url: 'https://bbs.nga.cn/read.php?tid=25009036',
+      avatar: {
+        src: url('@images/friend-links/NGA.svg'),
+        style: {
+          borderRadius: '0',
+          height: 'unset'
+        }
       }
     }]
   }, [theme])

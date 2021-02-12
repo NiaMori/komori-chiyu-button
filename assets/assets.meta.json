@@ -775,5 +775,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.23/dist/我爱你.mp3"
     ],
     "version": "0.0.23"
+  },
+  "@images/friend-links/NGA.svg": {
+    "OID": "sha256:b1348b54db3456fba3354f871f787fa7d8ead7e14727c956ee2d420ab914d9b8",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.24/dist/NGA.svg"
+    ],
+    "version": "0.0.24"
   }
 }
