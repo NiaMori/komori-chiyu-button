@@ -3,11 +3,13 @@ import { jsx, css } from '@emotion/react'
 
 import { Fragment, useEffect } from 'react'
 
-import { Switch as RouterView, Route } from 'react-router-dom'
+import { Switch as RouterView, Link, Route, useLocation } from 'react-router-dom'
 
 import {
   Button,
   Container,
+  Fab,
+  useMediaQuery,
   useTheme
 } from '@material-ui/core'
 
@@ -23,6 +25,7 @@ import { useEffectOnce } from 'react-use'
 import { useSnackbar } from 'notistack'
 
 import { isWebView } from './misc/utility'
+import { Home } from 'mdi-material-ui'
 
 const komoriAA = `
 言いたいことがあるんだよ！
@@ -60,6 +63,10 @@ const App = () : JSX.Element => {
   console.log('Komori......Komori...... 寂しい......')
 
   const theme = useTheme()
+
+  const { pathname } = useLocation()
+  const isSmall = useMediaQuery(theme.breakpoints.down('xs'))
+  const showBackToHome = isSmall && pathname !== '/'
 
   const { enqueueSnackbar, closeSnackbar } = useSnackbar()
 
@@ -107,6 +114,30 @@ const App = () : JSX.Element => {
               <Route key = {index} path = {path} exact = {exact} render = {render}/>
             ))}
           </RouterView>
+
+          {showBackToHome && <div
+            css = {css`
+              margin-top: ${theme.spacing(3)}px;
+              text-align: center;
+            `}
+          >
+            <Fab
+              component = {Link}
+              to = '/'
+              variant = 'extended'
+              css = {css`
+                text-transform: none;
+              `}
+            >
+              <Home
+                css = {css`
+                  margin-right: ${theme.spacing(1)}px;
+                `}
+              />
+
+              Back To Home
+            </Fab>
+          </div>}
         </Fragment>
       </Container>
     </Fragment>
