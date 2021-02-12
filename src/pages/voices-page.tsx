@@ -60,7 +60,7 @@ export const VoicesPage = () : JSX.Element => {
       && <VoicesCard tag = {t('最近更新')} voices = {newVoices}></VoicesCard>
     }
 
-    <Cards columnGap = {theme.spacing(5)}>
+    <Cards columnGap = {theme.spacing(5)} css = {css`margin-top: ${theme.spacing(2)}px;`}>
       {voices.map(([tag, voices]) => (
         <VoicesCard key = {tag} tag = {tag} voices = {voices}></VoicesCard>
       ))}

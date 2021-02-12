@@ -94,6 +94,9 @@ const App = () : JSX.Element => {
       <Container
         css = {css`
           margin-top: ${theme.spacing(3)}px;
+          margin-bottom: ${theme.spacing(3)}px;
+          padding-left: ${theme.spacing(5)}px;
+          padding-right: ${theme.spacing(5)}px;
         `}
       >
         <Fragment>
