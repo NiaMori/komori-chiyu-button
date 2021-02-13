@@ -100,6 +100,18 @@ export const lives = {
     date: '2021-02-04',
     url: ''
   } as Live,
+
+  '2021-02-06-LPL观战+钢琴练习': {
+    desc: 'LPL 观战 + 钢琴练习',
+    date: '2021-02-06',
+    url: 'https://www.bilibili.com/video/BV1Eh41117q9?p=5'
+  } as Live,
+
+  '2021-02-10-古守歌': {
+    desc: '古守歌',
+    date: '2021-02-10',
+    url: 'https://www.bilibili.com/video/BV1Eh41117q9?p=9'
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives

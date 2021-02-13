@@ -782,5 +782,68 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.24/dist/NGA.svg"
     ],
     "version": "0.0.24"
+  },
+  "@voices/2021/02/06/LPL观战+钢琴练习/仙贝ASMR（.mp3": {
+    "OID": "sha256:747503a3588e0c8e803473195cb927783068cca003ef2a58f3a7a08d4cd32d4e",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/仙贝ASMR（.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/06/LPL观战+钢琴练习/傻笑.mp3": {
+    "OID": "sha256:90dd817d07ac6747cfdadbea2e3444e3861147be9327c91612c3cb3ce7c1f6f2",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/傻笑.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/06/LPL观战+钢琴练习/恋口上-钢琴版.mp3": {
+    "OID": "sha256:a837d0b09e645b9c98d3626a3d6362bc1996ef9c90a129d97b57084909da8c04",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/恋口上-钢琴版.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/06/LPL观战+钢琴练习/请听题，古守是什么Cup呢？AAAAA！.mp3": {
+    "OID": "sha256:1219aeb225e73e613b78bd209b0204445617940fb0224de0b1fb0584abe6ced3",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/请听题，古守是什么Cup呢？AAAAA！.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/06/LPL观战+钢琴练习/谢谢，塞巴斯酱.mp3": {
+    "OID": "sha256:c6ab8dab4a6d9fdccb952ef1a000a7323c2f528cb2b12fb3994ec44721ec6810",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/谢谢，塞巴斯酱.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/10/古守歌/啊！头好痛！怎么，过去的记忆！！啊——.mp3": {
+    "OID": "sha256:f2a4e755fb2c3931828a209a87e94f3693bdac88b2ad6fef2f72badd043f1cca",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/啊！头好痛！怎么，过去的记忆！！啊——.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/10/古守歌/大家好我是猴哥（.mp3": {
+    "OID": "sha256:91d1ee49046876c60b7d2e9ce980fa95a365b0ff54e63dde192344afab964547",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/大家好我是猴哥（.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/10/古守歌/是古守喵哦~.mp3": {
+    "OID": "sha256:baf07b5ce203801208e6e3d4a6446e21816829b349571ccff8837acabc919ca0",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/是古守喵哦~.mp3"
+    ],
+    "version": "0.0.25"
+  },
+  "@voices/2021/02/10/古守歌/肉肉生日快乐歌.mp3": {
+    "OID": "sha256:e91ef3ac89ad22189abeb83b3ad315fd8dee77ae203f3e65b7d0621ca2677357",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/肉肉生日快乐歌.mp3"
+    ],
+    "version": "0.0.25"
   }
 }
