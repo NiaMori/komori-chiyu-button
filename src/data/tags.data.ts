@@ -23,7 +23,9 @@ export const tags = [
   '傲娇古守',
   '嚣张古守',
   '哼歌古守',
-  '撒娇古守'
+  '撒娇古守',
+  '古守美食',
+  '怪叫古守'
 ] as const
 
 export const tagTranslation: Partial<Record<Language, Partial<Record<Tag, string>>>> = {

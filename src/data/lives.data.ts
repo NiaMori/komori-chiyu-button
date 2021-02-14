@@ -112,6 +112,12 @@ export const lives = {
     date: '2021-02-10',
     url: 'https://www.bilibili.com/video/BV1Eh41117q9?p=9'
   } as Live,
+
+  '2021-02-14-情人节古守厨房': {
+    desc: '情人节古守厨房',
+    date: '2021-02-14',
+    url: ''
+  } as Live,
 }
 
 export type LiveIndex = keyof typeof lives

@@ -852,5 +852,117 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.26/dist/hisekierio.webp"
     ],
     "version": "0.0.26"
+  },
+  "@voices/2021/02/14/情人节古守厨房/HappyValentine~.mp3": {
+    "OID": "sha256:311220b3ef4bb40358ed16a6cd6709c7bde01e5ccaccaacac1ae34b98223fae7",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/HappyValentine~.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/prprprpr.mp3": {
+    "OID": "sha256:38c1f87de5e0ef7bce27bc57035a590a99660d77bd49844b3e577608f734c445",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/prprprpr.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/yadaze~.mp3": {
+    "OID": "sha256:b0030c14f9c87444cd40fac54cd725ccdfd29b0a62c870f9ba7bc269dd82bd4f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/yadaze~.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/健全吃寿司.mp3": {
+    "OID": "sha256:97d0c3f9d42bac2b2644d3b82cc6fe95a27f7747c11f2b69384f0e7110613301",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/健全吃寿司.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/古守只是在吃寿司.mp3": {
+    "OID": "sha256:009c7c40321c53b237dcc0a0228475a1e556cb4e1c267f6981450ec333f49f61",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/古守只是在吃寿司.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/古守喂食.mp3": {
+    "OID": "sha256:9c2a394837d8e819143cee87091e8e717abb1a9bbe88dc434a5df4afb782ba82",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/古守喂食.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/可恶！.mp3": {
+    "OID": "sha256:d6d89f13ab74e5858353c3efacd425f0fdce83314c818e69550f319388f217d9",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/可恶！.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/呜啊.mp3": {
+    "OID": "sha256:b4ea1aaa428a6768db959e063e8349caacdf1a8bb6aa8502a7d28e9ac34d9201",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/呜啊.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/啾啾啾啾啾.mp3": {
+    "OID": "sha256:896eff9e1b7e568db1022d7e5a516b0e0c03a08bc351042eefab639ac80b08cb",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/啾啾啾啾啾.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/喂肉肉吃寿司.mp3": {
+    "OID": "sha256:c0b688448b71ddfe914b282b5027eaa84439aca205488bb6118d3e164992b7f6",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/喂肉肉吃寿司.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/噔噔~.mp3": {
+    "OID": "sha256:a1df7355f2b1059ae5541dd7d9314314c914415616fd1ce19d785e6051938d4c",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/噔噔~.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/无名之印，通灵术！.mp3": {
+    "OID": "sha256:2204b9016dba1c33f1c141df6d7e18e487c773f41a087e732c97512aa2de62e2",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/无名之印，通灵术！.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/是先吃巧克力派呢？要先洗澡呢？还是说要先吃…….mp3": {
+    "OID": "sha256:b1996433f6f5f47f854754bb7677f0dc8f825185e0c83c7231ac05f4f3f4c46f",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/是先吃巧克力派呢？要先洗澡呢？还是说要先吃…….mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/欸？你在说什么——.mp3": {
+    "OID": "sha256:bcb1153e2f431044a317111dea60c89c4f016cf04f22b477ee398f0582ab9752",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/欸？你在说什么——.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/砧板之术！.mp3": {
+    "OID": "sha256:702edff32c2a9dd61bcf5c42510cb60e8d72981ef5ca9ef26e605910644b8086",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/砧板之术！.mp3"
+    ],
+    "version": "0.0.27"
+  },
+  "@voices/2021/02/14/情人节古守厨房/砧板按摩（.mp3": {
+    "OID": "sha256:cd6d04dcf270ba4c8cbf7443db16c7877d3a784cd1081568dfa833efbbcb8c14",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.27/dist/砧板按摩（.mp3"
+    ],
+    "version": "0.0.27"
   }
 }
