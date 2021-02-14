@@ -845,5 +845,12 @@
       "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.25/dist/肉肉生日快乐歌.mp3"
     ],
     "version": "0.0.25"
+  },
+  "@images/friend-links/hisekierio.webp": {
+    "OID": "sha256:d530a39daff887440512261cdb13ed34adab755a9ed079808e6a020653af6e88",
+    "provider": [
+      "https://cdn.jsdelivr.net/npm/komori-chiyu-button-assets@0.0.26/dist/hisekierio.webp"
+    ],
+    "version": "0.0.26"
   }
 }

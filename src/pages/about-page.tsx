@@ -61,6 +61,13 @@ const useFriendLinks = () => {
           height: 'unset'
         }
       }
+    }, {
+      name: '艾莉欧音声站 (๑>؂<๑）',
+      desc: '绯赤艾莉欧音声站',
+      url: 'https://btn.hisekierio.club',
+      avatar: {
+        src: url('@images/friend-links/hisekierio.webp')
+      }
     }]
   }, [theme])
 }
