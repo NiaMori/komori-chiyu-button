@@ -14,6 +14,10 @@ export default defineConfig({
     pwa()
   ],
 
+  alias: {
+    '@frontend': 'frontend'
+  },
+
   build: {
     manifest: true,
     rollupOptions: {
