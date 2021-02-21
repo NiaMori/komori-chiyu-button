@@ -14,8 +14,10 @@ export default defineConfig({
     pwa()
   ],
 
-  alias: {
-    '@frontend': 'frontend'
+  resolve: {
+    alias: {
+      '@frontend': 'frontend'
+    }
   },
 
   build: {
