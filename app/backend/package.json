@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": "true",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --ext ts,tsx --watch src --exec 'node -r esbuild-register -r tsconfig-paths/register src'",
+    "build": "esbuild src/index.ts --platform=node --bundle --outdir=dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.49",
+    "esbuild-register": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "tsconfig-paths": "^3.9.0"
+  }
+}
