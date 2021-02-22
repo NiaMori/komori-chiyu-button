@@ -43,6 +43,20 @@ export const splitChunks = (): Plugin => {
                 || id.includes('/node_modules/jss')
                 || id.includes('/node_modules/hyphenate-style-name/')
                 || id.includes('/node_modules/react-transition-group/')
+
+                || id.includes('/node_modules/socket.io')
+                || id.includes('/node_modules/debug')
+                || id.includes('/node_modules/base64-arraybuffer')
+                || id.includes('/node_modules/component-emitter')
+                || id.includes('/node_modules/parseuri')
+                || id.includes('/node_modules/engine.io')
+                || id.includes('/node_modules/backo2/')
+                || id.includes('/node_modules/has-cors/')
+                || id.includes('/node_modules/ms/')
+                || id.includes('/node_modules/parseqs/')
+                || id.includes('/node_modules/ws/')
+                || id.includes('/node_modules/xmlhttprequest-ssl/')
+                || id.includes('/node_modules/yeast/')
               ) {
                 return 'stable'
               }
