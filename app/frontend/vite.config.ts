@@ -16,7 +16,8 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@frontend': 'frontend'
+      '@frontend': 'frontend',
+      '@bridge': 'bridge'
     }
   },
 

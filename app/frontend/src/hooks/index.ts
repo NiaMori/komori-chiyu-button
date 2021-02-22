@@ -5,3 +5,5 @@ export * from './use-voice-playback'
 
 export * from './use-options'
 export * from './use-voices'
+
+export * from './use-remote-event-emitter'
