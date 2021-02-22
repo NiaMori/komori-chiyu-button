@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@frontend/*": ["./app/frontend/*"],
-      "@backend/*": ["./app/backend/*"]
+      "@backend/*": ["./app/backend/*"],
+      "@bridge/*": ["./app/bridge/*"]
     }
   }
 }

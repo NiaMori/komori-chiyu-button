@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "backend": "file:app/backend",
+    "bridge": "file:app/bridge",
     "frontend": "file:app/frontend"
   },
   "devDependencies": {
