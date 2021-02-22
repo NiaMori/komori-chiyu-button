@@ -6,7 +6,7 @@ import { useVocalist } from './use-vocalist'
 
 import { Voice } from '../data'
 
-import { reportVoicePlayback } from '../misc/analytics'
+import { useReportVoicePlayback } from '../misc/analytics'
 import { useOptions } from './use-options'
 import { Howl } from 'howler'
 
@@ -30,6 +30,8 @@ export const useVoicePlayback = ({
   const id = useMemo(() => `${voice.path}#${tag}`, [tag, voice.path])
 
   const [{ loop }, { getOption }] = useOptions()
+
+  const { report } = useReportVoicePlayback()
 
   const playSound = useCallback(() => {
     if (!soundRef.current) {
@@ -62,7 +64,7 @@ export const useVoicePlayback = ({
   }, [])
 
   const play = useCallback(() => {
-    reportVoicePlayback(voice)
+    report(voice)
 
     switchTo({
       id,
@@ -71,7 +73,7 @@ export const useVoicePlayback = ({
       stop: stopSound,
       ref: () => soundRef.current ?? null
     })
-  }, [switchTo, id, voice, playSound, stopSound])
+  }, [switchTo, id, voice, playSound, stopSound, report])
 
   useEffect(() => {
     soundRef.current?.loop(loop)

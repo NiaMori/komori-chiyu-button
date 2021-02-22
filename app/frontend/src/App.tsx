@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/react'
 
-import { Fragment, useEffect } from 'react'
+import { Fragment, useCallback, useEffect, useState } from 'react'
 
 import { Switch as RouterView, Link, Route, useLocation } from 'react-router-dom'
 
@@ -9,6 +9,7 @@ import {
   Button,
   Container,
   Fab,
+  Paper,
   useMediaQuery,
   useTheme
 } from '@material-ui/core'
@@ -26,6 +27,8 @@ import { useSnackbar } from 'notistack'
 
 import { isWebView } from './misc/utility'
 import { Home } from 'mdi-material-ui'
+import { useSubscriber } from './hooks/use-remote-event-emitter'
+import { produce } from 'immer'
 
 const komoriAA = `
 言いたいことがあるんだよ！
@@ -94,6 +97,23 @@ const App = () : JSX.Element => {
     }
   })
 
+  const [state, setState] = useState<Record<string, number>>({})
+
+  useSubscriber('@voice-playback-statistics/changes', useCallback(({ changes }) => {
+    setState(prev => produce(prev, draft => {
+      for (const change of changes) {
+        if (change.type === 'create' || change.type === 'update') {
+          const { path, count } = change.newData
+          const prevCount = draft[path] ?? 0
+          draft[path] = Math.max(prevCount, count)
+        } else if (change.type === 'delete') {
+          const { path } = change.oldData
+          draft[path] = 0
+        }
+      }
+    }))
+  }, []))
+
   return (
     <Fragment>
       <Header />
@@ -108,6 +128,17 @@ const App = () : JSX.Element => {
       >
         <Fragment>
           <BreadcrumbsNavBar />
+
+          <Paper
+            css = {css`
+              padding: ${theme.spacing(2)}px;
+              margin-bottom: ${theme.spacing(3)}px;
+            `}
+          >
+            <pre>
+              {JSON.stringify(state, null, 2)}
+            </pre>
+          </Paper>
 
           <RouterView>
             {routers.map(({ path, render, exact }, index) => (

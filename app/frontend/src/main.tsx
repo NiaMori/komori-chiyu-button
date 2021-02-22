@@ -18,6 +18,7 @@ import {
 import {
   OptionsProvider,
   VocalistProvider,
+  RemoteEventEmiterProvider
 } from './hooks'
 
 import { configureI18N } from './misc/i18n'
@@ -41,15 +42,17 @@ ReactDOM.render(
     <CssBaseline />
 
     <ThemeProvider theme = {theme}>
-      <SnackbarProvider>
-        <OptionsProvider>
-          <VocalistProvider>
-            <RouterProvider>
-              <App />
-            </RouterProvider>
-          </VocalistProvider>
-        </OptionsProvider>
-      </SnackbarProvider>
+      <RemoteEventEmiterProvider>
+        <SnackbarProvider>
+          <OptionsProvider>
+            <VocalistProvider>
+              <RouterProvider>
+                <App />
+              </RouterProvider>
+            </VocalistProvider>
+          </OptionsProvider>
+        </SnackbarProvider>
+      </RemoteEventEmiterProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
