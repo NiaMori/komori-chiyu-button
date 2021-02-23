@@ -18,7 +18,8 @@ import {
 import {
   OptionsProvider,
   VocalistProvider,
-  RemoteEventEmiterProvider
+  RemoteEventEmiterProvider,
+  DatabaseProvider
 } from './hooks'
 
 import { configureI18N } from './misc/i18n'
@@ -51,6 +52,7 @@ export const Compose = ({
 const providers: ComponentType[] = [
   ({ children }) => <ThemeProvider theme = {theme}>{children}</ThemeProvider>,
   RemoteEventEmiterProvider,
+  DatabaseProvider,
   ({ children }) => <SnackbarProvider>{children}</SnackbarProvider>,
   OptionsProvider,
   VocalistProvider,

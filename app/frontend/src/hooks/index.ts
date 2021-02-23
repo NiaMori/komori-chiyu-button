@@ -7,3 +7,5 @@ export * from './use-options'
 export * from './use-voices'
 
 export * from './use-remote-event-emitter'
+
+export * from './use-database'
