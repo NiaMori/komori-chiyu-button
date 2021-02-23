@@ -6,7 +6,6 @@ import { Fragment, useEffect } from 'react'
 import { Switch as RouterView, Link, Route, useLocation } from 'react-router-dom'
 
 import {
-  Button,
   Container,
   Fab,
   Paper,
@@ -22,12 +21,9 @@ import {
   ArchivePage
 } from './pages'
 
-import { useEffectOnce } from 'react-use'
-import { useSnackbar } from 'notistack'
-
-import { isWebView } from './misc/utility'
 import { Home } from 'mdi-material-ui'
 import { useDatabase, useDatabaseSync } from './hooks'
+import { useWebViewWarning } from './misc/utility'
 
 const komoriAA = `
 言いたいことがあるんだよ！
@@ -64,37 +60,13 @@ const App = () : JSX.Element => {
 
   console.log('Komori......Komori...... 寂しい......')
 
+  useWebViewWarning()
+
   const theme = useTheme()
 
   const { pathname } = useLocation()
   const isSmall = useMediaQuery(theme.breakpoints.down('xs'))
   const showBackToHome = isSmall && pathname !== '/'
-
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar()
-
-  useEffectOnce(() => {
-    if (isWebView()) {
-      enqueueSnackbar('您正在使用 app 内置浏览器\n为获得最佳的体验\n推荐使用原生浏览器访问本站 ^_^', {
-        variant: 'warning',
-        style: { whiteSpace: 'pre-line' },
-        anchorOrigin: {
-          vertical: 'bottom',
-          horizontal: 'right',
-        },
-        autoHideDuration: 3500,
-        action: (key) => (
-          <Button
-            key = 'confirm'
-            onClick = {() => closeSnackbar(key)}
-            variant = 'contained'
-            color = 'secondary'
-          >
-            确认
-          </Button>
-        )
-      })
-    }
-  })
 
   useDatabaseSync()
 
