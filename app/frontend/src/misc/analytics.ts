@@ -1,5 +1,6 @@
 import { useCallback } from 'react'
 import { Voice } from '../data'
+import { useDatabase } from '../hooks'
 import { useEmit } from '../hooks/use-remote-event-emitter'
 
 /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
@@ -11,7 +12,14 @@ export const gtag = (...args: any[]): void => {
 export const useReportVoicePlayback = (): { report: (voice: Voice) => void } => {
   const { emit } = useEmit()
 
+  const { databaseSnapshot, updateDatabase } = useDatabase()
+
   const report = useCallback((voice: Voice) => {
+    updateDatabase(({ '@voice-playback-statistics': statistics }) => {
+      const prevCount = databaseSnapshot['@voice-playback-statistics'][voice.path] ?? 0
+      statistics[voice.path] = Math.max(statistics[voice.path] ?? 0, prevCount + 1)
+    })
+
     emit('@voice-playback-statistics/report-playback', {
       path: voice.path
     })
@@ -21,7 +29,7 @@ export const useReportVoicePlayback = (): { report: (voice: Voice) => void } => 
         path: voice.path
       })
     }
-  }, [emit])
+  }, [databaseSnapshot, updateDatabase, emit])
 
   return {
     report
