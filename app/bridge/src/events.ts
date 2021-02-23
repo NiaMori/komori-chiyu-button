@@ -18,7 +18,9 @@ export type Change<T> = Create<T> | Update<T> | Delete<T>
 
 export interface ClientEvents {
   '@voice-playback-statistics/report-playback': {
-    path: string
+    path: string,
+    clientID: string,
+    timestampInMilliseconds: number
   }
 }
 

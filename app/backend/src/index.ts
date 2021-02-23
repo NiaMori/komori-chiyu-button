@@ -1,48 +1,60 @@
 import { Server as SocketServer, Socket } from 'socket.io'
-
+import { getDatabaseProvider } from './database'
 import { emit, subscribe } from './remote-event-emitter'
 
-const io = new SocketServer(3002)
+const main = async () => {
+  const { retire, record } = await getDatabaseProvider()
+  const statistics = await retire()
 
-const database: Record<string, number> = {}
+  const io = new SocketServer(3002)
 
-io.on('connection', (socket: Socket) => {
-  emit(io, '@voice-playback-statistics/changes', {
-    changes: Object.entries(database).map(([path, count]) => {
-      return {
-        type: 'create',
-        newData: {
-          path,
-          count
-        }
-      }
-    })
-  })
-
-  subscribe(socket, '@voice-playback-statistics/report-playback', ({ path }) => {
-    if (!database[path]) {
-      database[path] = 0
-    }
-
-    const prevCount = database[path]
-    const currCount = database[path] + 1
-
-    database[path] = currCount
-
+  io.on('connection', (socket: Socket) => {
     emit(io, '@voice-playback-statistics/changes', {
-      changes: [{
-        type: 'update',
-
-        oldData: {
-          path,
-          count: prevCount
-        },
-
-        newData: {
-          path,
-          count: currCount
+      changes: Object.entries(statistics).map(([path, count]) => {
+        return {
+          type: 'create',
+          newData: {
+            path,
+            count
+          }
         }
-      }]
+      })
+    })
+
+    subscribe(socket, '@voice-playback-statistics/report-playback', ({ path, clientID, timestampInMilliseconds }) => {
+      if (!statistics[path]) {
+        statistics[path] = 0
+      }
+
+      const prevCount = statistics[path]
+      const currCount = statistics[path] + 1
+
+      statistics[path] = currCount
+
+      emit(io, '@voice-playback-statistics/changes', {
+        changes: [{
+          type: 'update',
+
+          oldData: {
+            path,
+            count: prevCount
+          },
+
+          newData: {
+            path,
+            count: currCount
+          }
+        }]
+      })
+
+      record({
+        voiceID: path,
+        clientID,
+        playTime: new Date(timestampInMilliseconds)
+      })
     })
   })
-})
+
+}
+
+main()
