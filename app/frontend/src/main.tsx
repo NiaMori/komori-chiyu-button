@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
 
-import React from 'react'
+import React, { ComponentType, Fragment, PropsWithChildren } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as RouterProvider } from 'react-router-dom'
 
@@ -37,23 +37,33 @@ const theme = createMuiTheme({
   }
 })
 
+export const Compose = ({
+  components,
+  children
+}: PropsWithChildren<{ components: ComponentType[] }>) : JSX.Element => (
+  <Fragment>
+    {components.reverse().reduce((children, Component) => {
+      return <Component>{children}</Component>
+    }, children)}
+  </Fragment>
+)
+
+const providers: ComponentType[] = [
+  ({ children }) => <ThemeProvider theme = {theme}>{children}</ThemeProvider>,
+  RemoteEventEmiterProvider,
+  ({ children }) => <SnackbarProvider>{children}</SnackbarProvider>,
+  OptionsProvider,
+  VocalistProvider,
+  RouterProvider
+]
+
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline />
 
-    <ThemeProvider theme = {theme}>
-      <RemoteEventEmiterProvider>
-        <SnackbarProvider>
-          <OptionsProvider>
-            <VocalistProvider>
-              <RouterProvider>
-                <App />
-              </RouterProvider>
-            </VocalistProvider>
-          </OptionsProvider>
-        </SnackbarProvider>
-      </RemoteEventEmiterProvider>
-    </ThemeProvider>
+    <Compose components = {providers}>
+      <App/>
+    </Compose>
   </React.StrictMode>,
   document.getElementById('root')
 )
