@@ -71,7 +71,7 @@ export const useSubscriber = <E extends keyof ServerEvents>(
 
 export const RemoteEventEmiterProvider = ({
   children
-}: { children: ReactNode }) : JSX.Element => {
+}: { children?: ReactNode }) : JSX.Element => {
   const it = useMemo(() => {
     const socket = io('http://localhost:3002', {
       transports: ['websocket']
