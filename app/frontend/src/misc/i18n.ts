@@ -70,7 +70,7 @@ export const configureI18N = (): void => {
     .init({
       resources,
       fallbackLng: 'zh-CN',
-      debug: !import.meta.env.PROD,
+      debug: false,
 
       interpolation: {
         escapeValue: false
