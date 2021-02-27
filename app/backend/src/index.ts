@@ -7,7 +7,15 @@ const main = async () => {
   const statistics = await retire()
 
   const io = new SocketServer(3002, {
-    path: '/backend/'
+    path: '/backend/',
+    cors: {
+      origin: [
+        'https://komori.niamori.moe',
+        'https://button.komori.club',
+        'https://komori-chiyu-button.niamori.workers.dev',
+        'https://komori-chiyu-button-dev.niamori.workers.dev'
+      ]
+    }
   })
 
   io.on('connection', (socket: Socket) => {
