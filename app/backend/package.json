@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --ext ts,tsx --watch src --exec 'node -r esbuild-register -r tsconfig-paths/register src'",
-    "build": "esbuild src/index.ts --platform=node --bundle --outdir=dist"
+    "build": "esbuild src/index.ts --platform=node --bundle --outdir=dist --external:pg-native"
   },
   "dependencies": {
     "pg": "^8.5.1",
