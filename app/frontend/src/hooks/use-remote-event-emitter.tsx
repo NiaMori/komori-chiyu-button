@@ -73,8 +73,14 @@ export const RemoteEventEmiterProvider = ({
   children
 }: { children?: ReactNode }) : JSX.Element => {
   const it = useMemo(() => {
-    const socket = io('http://localhost:3002', {
-      transports: ['websocket']
+    const addr: Record<string, string> = {
+      'development': 'http://localhost:3002',
+      'production': 'https://komori.niamori.moe'
+    }
+
+    const socket = io(addr[import.meta.env.MODE], {
+      transports: ['websocket'],
+      path: '/backend/'
     })
 
     return {

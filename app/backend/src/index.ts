@@ -6,7 +6,9 @@ const main = async () => {
   const { retire, record } = await getDatabaseProvider()
   const statistics = await retire()
 
-  const io = new SocketServer(3002)
+  const io = new SocketServer(3002, {
+    path: '/backend/'
+  })
 
   io.on('connection', (socket: Socket) => {
     emit(io, '@voice-playback-statistics/changes', {
